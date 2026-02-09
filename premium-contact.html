@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - SI Legal Services | Free Legal Consultation 24/7</title>
+<meta name="description" content="Contact SI Legal Services for free legal consultation. Call +91 8605871448 or WhatsApp 24/7. Office in Nanded, Maharashtra.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{--light-blue:#3B82F6;--dark-blue:#1E40AF;--silver:#C0C0C0;--dark-navy:#0A1628;--pure-white:#FFFFFF;--text-dark:#1a1a1a;--text-light:#4a4a4a;--border-elegant:#3B82F650}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Cormorant Garamond',serif;background:var(--pure-white);color:var(--text-dark);line-height:1.7;overflow-x:hidden}
+header{position:fixed;top:0;width:100%;z-index:1000;background:rgba(10,22,40,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--light-blue);box-shadow:0 5px 30px rgba(0,0,0,0.3)}
+.top-bar{background:linear-gradient(135deg,var(--dark-navy),var(--dark-blue));padding:10px 0;font-family:'Inter',sans-serif;font-size:13px;color:var(--silver)}
+.top-bar-content{max-width:1400px;margin:0 auto;padding:0 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.top-bar-item{display:flex;align-items:center;gap:8px;color:var(--silver)}
+.top-bar-item i{color:var(--silver)}
+.top-bar-item a{color:var(--silver);text-decoration:none}
+.nav-container{max-width:1400px;margin:0 auto;padding:20px 40px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:15px;cursor:pointer}
+.logo-icon{width:50px;height:50px;background:var(--silver);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--dark-navy);font-weight:bold}
+.logo-text h1{font-family:'Playfair Display',serif;font-size:28px;font-weight:800;color:var(--silver);letter-spacing:1px}
+.logo-text p{font-family:'Inter',sans-serif;font-size:11px;color:var(--silver);letter-spacing:3px;text-transform:uppercase;margin-top:-5px}
+nav ul{list-style:none;display:flex;gap:35px;align-items:center}
+nav li{font-family:'Inter',sans-serif;font-size:14px;font-weight:500;color:var(--pure-white);cursor:pointer;position:relative;letter-spacing:0.5px;transition:all 0.3s ease}
+nav li::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:2px;background:var(--light-blue);transition:width 0.3s ease}
+nav li:hover::after{width:100%}
+nav li:hover{color:var(--light-blue)}
+.cta-button{background:linear-gradient(135deg,var(--light-blue),var(--dark-blue));color:var(--pure-white);padding:12px 30px;border-radius:50px;font-weight:700;font-size:14px;border:2px solid transparent;transition:all 0.3s ease;letter-spacing:0.5px;cursor:pointer}
+.cta-button:hover{background:transparent;border-color:var(--light-blue);color:var(--light-blue);transform:translateY(-2px)}
+.mobile-toggle{display:none;font-size:24px;color:var(--light-blue);cursor:pointer}
+.page-header{min-height:50vh;background:linear-gradient(135deg,rgba(59,130,246,0.92),rgba(30,64,175,0.88)),url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920') center/cover no-repeat fixed;display:flex;align-items:center;justify-content:center;padding-top:140px;padding-bottom:80px;text-align:center}
+.page-header h1{font-family:'Playfair Display',serif;font-size:68px;font-weight:800;color:var(--pure-white);margin-bottom:20px}
+.page-header p{font-size:22px;color:rgba(255,255,255,0.95);max-width:700px;margin:0 auto}
+.contact-section{padding:100px 40px;background:var(--pure-white)}
+.contact-container{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:60px}
+.contact-info{background:linear-gradient(135deg,var(--light-blue),var(--dark-blue));padding:60px;border-radius:20px;color:var(--pure-white)}
+.contact-info h2{font-family:'Playfair Display',serif;font-size:42px;font-weight:800;color:var(--pure-white);margin-bottom:30px}
+.contact-info p{font-size:18px;color:rgba(255,255,255,0.9);margin-bottom:40px;line-height:1.7}
+.info-item{display:flex;align-items:flex-start;gap:20px;margin-bottom:30px;padding:25px;background:rgba(255,255,255,0.1);border-radius:12px;border:1px solid rgba(255,255,255,0.2);transition:all 0.3s ease}
+.info-item:hover{background:rgba(255,255,255,0.15);border-color:var(--pure-white);transform:translateX(10px)}
+.info-icon{width:60px;height:60px;background:var(--pure-white);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.info-icon i{font-size:28px;color:var(--light-blue)}
+.info-content h4{font-family:'Playfair Display',serif;font-size:20px;color:var(--pure-white);margin-bottom:8px}
+.info-content p{font-size:15px;color:rgba(255,255,255,0.9);margin:0}
+.info-content a{color:rgba(255,255,255,0.9);text-decoration:none}
+.contact-form{background:white;padding:60px;border-radius:20px;border:2px solid var(--border-elegant);box-shadow:0 20px 60px rgba(0,0,0,0.08)}
+.contact-form h3{font-family:'Playfair Display',serif;font-size:36px;font-weight:800;color:var(--light-blue);margin-bottom:15px}
+.contact-form .subtitle{font-size:16px;color:var(--text-light);margin-bottom:40px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;color:var(--dark-navy);margin-bottom:8px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:14px 18px;border:2px solid var(--border-elegant);border-radius:10px;font-family:'Cormorant Garamond',serif;font-size:16px;transition:all 0.3s ease}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--light-blue);box-shadow:0 0 0 4px rgba(59,130,246,0.1)}
+.form-group textarea{min-height:120px;resize:vertical}
+.btn{padding:18px 40px;border-radius:50px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all 0.3s ease;border:none;display:inline-flex;align-items:center;justify-content:center;gap:10px;letter-spacing:0.5px;width:100%}
+.btn-primary{background:linear-gradient(135deg,var(--light-blue),var(--dark-blue));color:var(--pure-white);box-shadow:0 10px 40px rgba(59,130,246,0.3)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 15px 50px rgba(59,130,246,0.5)}
+.btn-primary:disabled{opacity:0.6;cursor:not-allowed;transform:none}
+.alert{padding:16px 20px;border-radius:10px;margin-bottom:30px;font-family:'Inter',sans-serif;font-size:14px;display:flex;align-items:center;gap:12px}
+.alert.info{background:#dbeafe;color:#1e3a8a;border-left:4px solid #3b82f6}
+.alert.success{background:#d1fae5;color:#065f46;border-left:4px solid #10b981}
+.alert.error{background:#fee2e2;color:#991b1b;border-left:4px solid #ef4444}
+.map-section{padding:0;background:white}
+.map-section iframe{width:100%;height:500px;border:none}
+footer{background:linear-gradient(180deg,var(--dark-navy),var(--dark-blue));color:var(--pure-white);padding:80px 40px 30px}
+.footer-content{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:50px}
+.footer-section h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--silver);margin-bottom:25px}
+.footer-section p{font-size:15px;color:rgba(255,255,255,0.8);line-height:1.7;margin-bottom:20px}
+.footer-section ul{list-style:none}
+.footer-section li{margin-bottom:12px}
+.footer-section a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:14px;transition:all 0.3s ease;display:inline-flex;align-items:center;gap:8px}
+.footer-section a:hover{color:var(--light-blue);transform:translateX(5px)}
+.footer-social{display:flex;gap:15px;margin-top:20px}
+.footer-social a{width:45px;height:45px;border-radius:50%;background:rgba(59,130,246,0.2);border:1px solid var(--light-blue);display:flex;align-items:center;justify-content:center;color:var(--light-blue);transition:all 0.3s ease;transform:none}
+.footer-social a:hover{background:var(--light-blue);color:var(--pure-white);transform:translateY(-3px)}
+.footer-bottom{border-top:1px solid rgba(59,130,246,0.2);padding-top:30px;text-align:center}
+.footer-bottom p{font-family:'Inter',sans-serif;font-size:13px;color:rgba(255,255,255,0.7)}
+.footer-bottom a{color:var(--light-blue);text-decoration:none}
+.whatsapp-float{position:fixed;bottom:30px;right:30px;width:65px;height:65px;background:linear-gradient(135deg,#25d366,#128C7E);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;color:white;box-shadow:0 8px 30px rgba(37,211,102,0.4);cursor:pointer;z-index:999;animation:pulse 2s infinite}
+.whatsapp-float:hover{transform:scale(1.1)}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+@media(max-width:1024px){.contact-container{grid-template-columns:1fr}.footer-content{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){nav{display:none}nav.active{display:block;position:absolute;top:100%;left:0;right:0;background:var(--dark-navy);padding:20px}nav ul{flex-direction:column;gap:20px}.mobile-toggle{display:block}.page-header h1{font-size:42px}.form-row{grid-template-columns:1fr}.contact-form,.contact-info{padding:40px}.footer-content{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="top-bar">
+<div class="top-bar-content">
+<div class="top-bar-item"><i class="fas fa-phone"></i><span>+91 8605871448</span></div>
+<div class="top-bar-item"><i class="fas fa-envelope"></i><a href="mailto:imran@silegalservices.com">imran@silegalservices.com</a></div>
+<div class="top-bar-item"><i class="fas fa-clock"></i><span>Mon - Sat: 9AM - 6PM</span></div>
+<div class="top-bar-item"><i class="far fa-calendar-alt"></i><span id="currentDateTime"></span></div>
+</div>
+</div>
+<div class="nav-container">
+<div class="logo" onclick="window.location.href='index.html'">
+<div class="logo-icon"><i class="fas fa-balance-scale"></i></div>
+<div class="logo-text"><h1>SI LEGAL</h1><p>ADVOCATES & CONSULTANTS</p></div>
+</div>
+<div class="mobile-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+<nav id="nav">
+<ul>
+<li onclick="window.location.href='index.html'">Home</li>
+<li onclick="window.location.href='premium-about.html'">About Us</li>
+<li onclick="window.location.href='premium-contact.html'">Contact</li>
+<li><button class="cta-button" onclick="openWhatsApp()">
+<i class="fab fa-whatsapp"></i> Free Consultation</button></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="page-header">
+<div><h1>Get in Touch</h1><p>Expert legal advice is just a call away. Available 24/7 to discuss your case.</p></div>
+</section>
+
+<section class="contact-section">
+<div class="contact-container">
+
+<div class="contact-info">
+<h2>Contact Information</h2>
+<p>Reach out to us through any of these channels. We're here to help you with your legal matters.</p>
+
+<div class="info-item">
+<div class="info-icon"><i class="fas fa-phone"></i></div>
+<div class="info-content">
+<h4>Call Us</h4>
+<p><a href="tel:+918605871448">+91 8605871448</a></p>
+<p>24/7 Available</p>
+</div>
+</div>
+
+<div class="info-item">
+<div class="info-icon"><i class="fas fa-envelope"></i></div>
+<div class="info-content">
+<h4>Email Us</h4>
+<p><a href="mailto:imran@silegalservices.com">imran@silegalservices.com</a></p>
+<p>Response within 24 hours</p>
+</div>
+</div>
+
+<div class="info-item">
+<div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+<div class="info-content">
+<h4>Visit Us</h4>
+<p>Nanded, Maharashtra</p>
+<p>India - 431601</p>
+</div>
+</div>
+
+<div class="info-item">
+<div class="info-icon"><i class="fas fa-clock"></i></div>
+<div class="info-content">
+<h4>Office Hours</h4>
+<p>Monday - Saturday</p>
+<p>9:00 AM - 6:00 PM</p>
+</div>
+</div>
+</div>
+
+<div class="contact-form">
+<h3>Send Us a Message</h3>
+<p class="subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
+
+<div id="formAlert" class="alert info" style="display:none"></div>
+
+<form id="contactForm">
+<div class="form-row">
+<div class="form-group">
+<label for="name">Full Name *</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+<label for="mobile">Mobile Number *</label>
+<input type="tel" id="mobile" name="mobile" required>
+</div>
+</div>
+
+<div class="form-row">
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email">
+</div>
+<div class="form-group">
+<label for="city">City/Location</label>
+<input type="text" id="city" name="city">
+</div>
+</div>
+
+<div class="form-group">
+<label for="service">Service Required *</label>
+<select id="service" name="service" required>
+<option value="">Select a service</option>
+<option value="Criminal Defence">Criminal Defence</option>
+<option value="Cyber Crime">Cyber Crime</option>
+<option value="Civil Litigation">Civil Litigation</option>
+<option value="Family & Matrimonial Law">Family & Matrimonial Law</option>
+<option value="Consumer Cases">Consumer Cases</option>
+<option value="Corporate & Business Law">Corporate & Business Law</option>
+<option value="Arbitration & Mediation">Arbitration & Mediation</option>
+<option value="Passport Services">Passport Services</option>
+<option value="Copyright Law">Copyright Law</option>
+<option value="Patent Law">Patent Law</option>
+<option value="Trademark">Trademark</option>
+<option value="Other">Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="message">Describe Your Legal Issue *</label>
+<textarea id="message" name="message" required></textarea>
+</div>
+
+<button type="submit" class="btn btn-primary" id="submitBtn">
+<i class="fas fa-paper-plane"></i> Submit to Email & WhatsApp
+</button>
+</form>
+</div>
+
+</div>
+</section>
+
+<section class="map-section">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30396.77427665279!2d77.29841437431641!3d19.150120200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d7b2c5555555%3A0x0!2zMTnCsDA5JzAwLjQiTiA3N8KwMTgnMDcuNiJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<footer>
+<div class="footer-content">
+<div class="footer-section">
+<h3>SI Legal Services</h3>
+<p>Premier law firm providing comprehensive legal solutions in Nanded, Maharashtra with expertise, integrity, and excellence.</p>
+<div class="footer-social">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.instagram.com/silegalservices086/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+
+<div class="footer-section">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="premium-about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+<li><a href="premium-contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h3>Legal Services</h3>
+<ul>
+<li><a href="#"><i class="fas fa-chevron-right"></i> Criminal Defence</a></li>
+<li><a href="#"><i class="fas fa-chevron-right"></i> Cyber Crime</a></li>
+<li><a href="#"><i class="fas fa-chevron-right"></i> Family Law</a></li>
+<li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Law</a></li>
+<li><a href="#"><i class="fas fa-chevron-right"></i> Civil Litigation</a></li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h3>Contact Info</h3>
+<ul>
+<li><a href="tel:+918605871448"><i class="fas fa-phone"></i> +91 8605871448</a></li>
+<li><a href="mailto:imran@silegalservices.com"><i class="fas fa-envelope"></i> imran@silegalservices.com</a></li>
+<li><a href="#"><i class="fas fa-map-marker-alt"></i> Nanded, Maharashtra</a></li>
+<li><a href="#"><i class="fas fa-clock"></i> Mon-Sat: 9AM-6PM</a></li>
+</ul>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p>&copy; 2026 
+<a href="http://kssoftware.infinityfree.me/" 
+target="_blank" 
+style="color: inherit; text-decoration: none;">
+KS_SOFTWARE
+</a>
+. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+</p>
+<p style="margin-top: 10px; font-size: 14px;">
+<i class="fas fa-calendar-alt" style="color: var(--light-blue); margin-right: 8px;"></i>
+<span id="footerDateTime" style="color: var(--silver);"></span>
+</p>
+<div style="margin-top:15px;padding:10px 20px;background:rgba(59,130,246,0.1);border-radius:30px;display:inline-block;border:1px solid rgba(59,130,246,0.3)">
+<i class="fas fa-eye" style="color:var(--light-blue);margin-right:8px"></i>
+<span style="color:var(--silver);font-family:'Inter',sans-serif;font-size:13px">Total Visitors: </span>
+<span id="visitorCount" style="color:var(--light-blue);font-family:monospace;font-size:15px;font-weight:700">000000</span>
+</div>
+</div>
+</footer>
+
+<div class="whatsapp-float" onclick="openWhatsApp()">
+<i class="fab fa-whatsapp"></i>
+</div>
+
+<script>
+function toggleMenu(){const nav=document.getElementById('nav');nav.classList.toggle('active')}
+
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+e.preventDefault();
+
+const submitBtn = document.getElementById('submitBtn');
+const formAlert = document.getElementById('formAlert');
+
+submitBtn.disabled = true;
+submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+const name = document.getElementById('name').value;
+const mobile = document.getElementById('mobile').value;
+const email = document.getElementById('email').value;
+const city = document.getElementById('city').value;
+const service = document.getElementById('service').value;
+const message = document.getElementById('message').value;
+
+const emailBody = `
+═══════════════════════════════════════════
+LEGAL CONSULTATION REQUEST
+SI Legal Services - Website Form
+═══════════════════════════════════════════
+
+📋 CLIENT DETAILS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👤 Name: ${name}
+📱 Mobile: ${mobile}
+📧 Email: ${email || 'Not Provided'}
+📍 Location: ${city || 'Not Provided'}
+
+⚖️ SERVICE REQUESTED:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+${service}
+
+📝 LEGAL ISSUE DETAILS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+${message}
+
+═══════════════════════════════════════════
+⏰ Submitted: ${new Date().toLocaleString('en-IN')}
+═══════════════════════════════════════════
+`;
+
+const formData = new FormData();
+formData.append('access_key', '04a7252d-0ea6-423f-b8e9-90cb78767de9');
+formData.append('subject', `🔔 New Legal Consultation - ${service}`);
+formData.append('from_name', 'SI Legal Website');
+formData.append('name', name);
+formData.append('email', 'silegalservices086@gmail.com');
+formData.append('message', emailBody);
+
+try {
+const response = await fetch('https://api.web3forms.com/submit', {
+method: 'POST',
+body: formData
+});
+
+const data = await response.json();
+
+if (data.success) {
+formAlert.className = 'alert success';
+formAlert.style.display = 'flex';
+formAlert.innerHTML = '<i class="fas fa-check-circle"></i><span>✅ Email sent! Redirecting to WhatsApp...</span>';
+
+const whatsappMsg = encodeURIComponent(`*⚖️ LEGAL CONSULTATION REQUEST*
+*SI Legal Services*
+
+*📋 CLIENT DETAILS:*
+👤 *Name:* ${name}
+📱 *Mobile:* ${mobile}
+📧 *Email:* ${email || 'Not Provided'}
+📍 *Location:* ${city || 'Not Provided'}
+
+*⚖️ SERVICE:* ${service}
+
+*📝 DETAILS:*
+${message}
+
+*⏰ Time:* ${new Date().toLocaleString('en-IN')}`);
+
+setTimeout(() => {
+window.open(`https://wa.me/918605871448?text=${whatsappMsg}`, '_blank');
+document.getElementById('contactForm').reset();
+submitBtn.disabled = false;
+submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit to Email & WhatsApp';
+formAlert.style.display = 'none';
+}, 1500);
+} else {
+throw new Error('Failed');
+}
+} catch (error) {
+formAlert.className = 'alert error';
+formAlert.style.display = 'flex';
+formAlert.innerHTML = '<i class="fas fa-exclamation-circle"></i><span>⚠️ Email failed. Redirecting to WhatsApp...</span>';
+
+const whatsappMsg = encodeURIComponent(`*⚖️ LEGAL CONSULTATION*\n*Name:* ${name}\n*Mobile:* ${mobile}\n*Service:* ${service}\n*Details:* ${message}`);
+
+setTimeout(() => {
+window.open(`https://wa.me/918605871448?text=${whatsappMsg}`, '_blank');
+submitBtn.disabled = false;
+submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit to Email & WhatsApp';
+}, 2000);
+}
+});
+
+function openWhatsApp(){window.open('https://wa.me/918605871448?text=Hello,%20I%20need%20legal%20assistance.%20Please%20help.','_blank')}
+
+function updateDateTime() {
+const now = new Date();
+const options = {
+weekday: 'short',
+day: '2-digit',
+month: 'short',
+year: 'numeric',
+hour: '2-digit',
+minute: '2-digit',
+hour12: true
+};
+const formattedDate = now.toLocaleString('en-IN', options);
+
+const headerDateTime = document.getElementById('currentDateTime');
+if (headerDateTime) {
+headerDateTime.textContent = formattedDate;
+}
+
+const footerDateTime = document.getElementById('footerDateTime');
+if (footerDateTime) {
+footerDateTime.textContent = formattedDate;
+}
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+function updateVisitorCount() {
+let visitorCount = localStorage.getItem('silegal_visitor_count');
+
+if (!visitorCount) {
+visitorCount = 1;
+} else {
+visitorCount = parseInt(visitorCount) + 1;
+}
+
+localStorage.setItem('silegal_visitor_count', visitorCount);
+
+const visitorElement = document.getElementById('visitorCount');
+if (visitorElement) {
+visitorElement.textContent = String(visitorCount).padStart(6, '0');
+}
+}
+
+updateVisitorCount();
+</script>
+
+</body>
+</html>
