@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <!-- Primary SEO Meta Tags -->
-<title>SI Legal Services - Expert Advocate & Legal Consultation in Nanded | Top Law Firm</title>
+<title>SI Legal Services - Expert Advocate & Legal Consultation in Nanded </title>
 <meta name="title" content="SI Legal Services - Expert Advocate & Legal Consultation in Nanded | Top Law Firm">
 <meta name="description" content="Providing professional legal services in criminal defence, civil disputes, cyber crime, matrimonial and consumer cases. Your reliable legal partner for honest advice and strong representation in Nanded, Maharashtra. 100% success rate.">
 <meta name="keywords" content="advocate near me, lawyer consultation, legal services Nanded, criminal lawyer, civil lawyer, cyber crime lawyer, family law attorney, court marriage, legal advice online, best advocate in Nanded, Maharashtra lawyer, arbitration, passport services, trademark, patent, copyright">
@@ -98,14 +98,15 @@
 
 <style>
 :root{
-  --light-blue: #3B82F6;
-  --dark-blue: #1E40AF;
-  --silver: #C0C0C0;
+  --primary-gold: #00008B;
   --dark-navy: #0A1628;
-  --pure-white: #FFFFFF;
+  --rich-brown: #2C1810;
+  --cream: #F5F1E8;
+  --light-gold: #C8D8F8;
+  --accent-burgundy: #8B2635;
   --text-dark: #1a1a1a;
   --text-light: #4a4a4a;
-  --border-elegant: #3B82F650;
+  --border-elegant: #00008b50;
 }
 
 *{
@@ -120,7 +121,7 @@ html{
 
 body{
   font-family: 'Cormorant Garamond', serif;
-  background: var(--pure-white);
+  background: var(--cream);
   color: var(--text-dark);
   line-height: 1.7;
   overflow-x: hidden;
@@ -132,9 +133,9 @@ header{
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(10, 22, 40, 0.95);
+  background: rgba(00, 00, 140, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--light-blue);
+  border-bottom: 1px solid #00008B;
   transition: all 0.3s ease;
 }
 
@@ -143,11 +144,11 @@ header.scrolled{
 }
 
 .top-bar{
-  background: linear-gradient(135deg, var(--dark-navy), var(--dark-blue));
+  background: linear-gradient(135deg, var(--rich-brown), var(--dark-navy));
   padding: 10px 0;
   font-family: 'Inter', sans-serif;
   font-size: 13px;
-  color: var(--silver);
+  color: #F5F5F5;
 }
 
 .top-bar-content{
@@ -165,15 +166,14 @@ header.scrolled{
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--silver);
 }
 
 .top-bar-item i{
-  color: var(--silver);
+  color: #00008B;
 }
 
 .top-bar-item a{
-  color: var(--silver);
+  color: #F5F5F5;
   text-decoration: none;
 }
 
@@ -196,13 +196,13 @@ header.scrolled{
 .logo-icon{
   width: 50px;
   height: 50px;
-  background: var(--silver);
+  background: linear-gradient(135deg, #00008B, #4444CC);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  color: var(--dark-navy);
+  color: #F5F5F5;
   font-weight: bold;
 }
 
@@ -210,14 +210,14 @@ header.scrolled{
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 800;
-  color: var(--silver);
+  color: #F5F5F5;
   letter-spacing: 1px;
 }
 
 .logo-text p{
   font-family: 'Inter', sans-serif;
   font-size: 11px;
-  color: var(--silver);
+  color: var(--light-gold);
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-top: -5px;
@@ -234,7 +234,7 @@ nav li{
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: var(--pure-white);
+  color: #F5F5F5;
   cursor: pointer;
   position: relative;
   letter-spacing: 0.5px;
@@ -248,7 +248,7 @@ nav li::after{
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--light-blue);
+  background: #00008B;
   transition: width 0.3s ease;
 }
 
@@ -257,12 +257,12 @@ nav li:hover::after{
 }
 
 nav li:hover{
-  color: var(--light-blue);
+  color: #00008B;
 }
 
 .cta-button{
-  background: linear-gradient(135deg, var(--light-blue), var(--dark-blue));
-  color: var(--pure-white);
+  background: linear-gradient(135deg, #00008B, #0000CD);
+  color: #F5F5F5;
   padding: 12px 30px;
   border-radius: 50px;
   font-weight: 700;
@@ -275,15 +275,15 @@ nav li:hover{
 
 .cta-button:hover{
   background: transparent;
-  border-color: var(--light-blue);
-  color: var(--light-blue);
+  border-color: #00008B;
+  color: #00008B;
   transform: translateY(-2px);
 }
 
 .mobile-toggle{
   display: none;
   font-size: 24px;
-  color: var(--light-blue);
+  color: #F5F5F5;
   cursor: pointer;
 }
 
@@ -291,13 +291,11 @@ nav li:hover{
 .hero{
   min-height: 100vh;
   background: 
-    linear-gradient(135deg, rgba(59, 130, 246, 0.92), rgba(30, 64, 175, 0.88)),
+    linear-gradient(135deg, rgba(10, 22, 40, 0.92), rgba(44, 24, 16, 0.88)),
     url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920') center/cover no-repeat fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding-top: 120px;
-  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -309,46 +307,71 @@ nav li:hover{
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.2), transparent 50%),
-              radial-gradient(circle at 70% 80%, rgba(30, 64, 175, 0.2), transparent 50%);
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(0, 0, 139, 0.15), transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(139, 38, 53, 0.1), transparent 50%);
   pointer-events: none;
 }
 
 .hero-content{
-  max-width: 1000px;
-  padding: 0 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 40px;
   position: relative;
   z-index: 1;
 }
 
-.hero h1{
-  font-family: 'Playfair Display', serif;
-  font-size: 72px;
-  font-weight: 900;
-  color: var(--pure-white);
-  margin-bottom: 25px;
-  line-height: 1.1;
-  text-shadow: 2px 4px 20px rgba(0,0,0,0.3);
+.hero-badge{
+  display: inline-block;
+  background: rgba(0, 0, 139, 0.2);
+  border: 1px solid #00008B;
+  padding: 8px 24px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  animation: fadeInUp 0.8s ease;
 }
 
-.hero .highlight{
-  color: var(--silver);
-  font-style: italic;
+.hero-badge span{
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #C8D8F8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  font-weight: 800;
+  color: #F5F5F5;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  max-width: 900px;
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.hero h2 .highlight{
+  color: #00008B;
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 0 30px rgba(100, 100, 255, 0.4);
 }
 
 .hero p{
   font-size: 24px;
-  color: rgba(255,255,255,0.95);
-  margin-bottom: 40px;
+  color: #C8D8F8;
+  max-width: 700px;
+  margin-bottom: 50px;
   line-height: 1.6;
-  text-shadow: 1px 2px 10px rgba(0,0,0,0.2);
+  animation: fadeInUp 1.2s ease 0.4s both;
 }
 
 .hero-buttons{
   display: flex;
   gap: 20px;
-  justify-content: center;
   flex-wrap: wrap;
+  animation: fadeInUp 1.4s ease 0.6s both;
 }
 
 .btn{
@@ -359,40 +382,82 @@ nav li:hover{
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: none;
+  border: 2px solid transparent;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
+  text-decoration: none;
   letter-spacing: 0.5px;
 }
 
 .btn-primary{
-  background: linear-gradient(135deg, var(--silver), #A8A8A8);
-  color: var(--dark-navy);
-  box-shadow: 0 10px 40px rgba(192, 192, 192, 0.3);
+  background: linear-gradient(135deg, #00008B, #0000CD);
+  color: #F5F5F5;
+  box-shadow: 0 10px 40px rgba(0, 0, 139, 0.4);
 }
 
 .btn-primary:hover{
   transform: translateY(-3px);
-  box-shadow: 0 15px 50px rgba(192, 192, 192, 0.5);
+  box-shadow: 0 15px 50px rgba(0, 0, 139, 0.6);
 }
 
 .btn-secondary{
   background: transparent;
-  color: var(--pure-white);
-  border: 2px solid var(--pure-white);
+  color: #F5F5F5;
+  border-color: #F5F5F5;
 }
 
 .btn-secondary:hover{
-  background: var(--pure-white);
-  color: var(--light-blue);
+  background: #F5F5F5;
+  color: var(--dark-navy);
+}
+
+/* TRUST INDICATORS */
+.trust-section{
+  background: linear-gradient(135deg, var(--dark-navy), var(--rich-brown));
+  padding: 60px 40px;
+  margin-top: -1px;
+}
+
+.trust-container{
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+
+.trust-item{
+  padding: 20px;
+  border-right: 1px solid rgba(245, 245, 245, 0.3);
+}
+
+.trust-item:last-child{
+  border-right: none;
+}
+
+.trust-item h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #F5F5F5;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px rgba(100, 100, 255, 0.3);
+}
+
+.trust-item p{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #C8D8F8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* PRACTICE AREAS */
 .practice-areas{
   padding: 120px 40px;
-  background: var(--pure-white);
+  background: var(--cream);
 }
 
 .section-header{
@@ -401,62 +466,104 @@ nav li:hover{
   margin: 0 auto 80px;
 }
 
+.section-badge{
+  display: inline-block;
+  background: #dde8fb;
+  padding: 8px 24px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #00008B;
+}
+
+.section-badge span{
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #00008B;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .section-header h2{
   font-family: 'Playfair Display', serif;
-  font-size: 56px;
+  font-size: 52px;
   font-weight: 800;
-  color: var(--light-blue);
+  color: var(--dark-navy);
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .section-header p{
   font-size: 20px;
   color: var(--text-light);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .practice-grid{
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
 }
 
 .practice-card{
-  background: var(--pure-white);
+  background: white;
+  border: 1px solid #00008b50;
+  border-radius: 12px;
   padding: 40px;
-  border-radius: 20px;
-  border: 2px solid var(--border-elegant);
-  transition: all 0.4s ease;
-  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.practice-card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #00008B, var(--accent-burgundy));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.practice-card:hover::before{
+  transform: scaleX(1);
 }
 
 .practice-card:hover{
   transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(59, 130, 246, 0.15);
-  border-color: var(--light-blue);
+  box-shadow: 0 20px 60px rgba(0, 0, 139, 0.15);
+  border-color: #00008B;
 }
 
 .practice-icon{
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, var(--light-blue), var(--dark-blue));
-  border-radius: 15px;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #00008B, #4444CC);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.practice-card:hover .practice-icon{
+  transform: scale(1.1) rotate(5deg);
 }
 
 .practice-icon i{
-  font-size: 36px;
-  color: var(--pure-white);
+  font-size: 32px;
+  color: #F5F5F5;
 }
 
 .practice-card h3{
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   color: var(--dark-navy);
   margin-bottom: 15px;
@@ -465,19 +572,19 @@ nav li:hover{
 .practice-card p{
   font-size: 16px;
   color: var(--text-light);
-  line-height: 1.7;
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .practice-link{
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--light-blue);
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 600;
+  color: #00008B;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   transition: gap 0.3s ease;
 }
 
@@ -488,61 +595,77 @@ nav li:hover{
 /* WHY CHOOSE US */
 .why-choose{
   padding: 120px 40px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(30, 64, 175, 0.05));
+  background: linear-gradient(135deg, var(--dark-navy), var(--rich-brown));
+  position: relative;
+  overflow: hidden;
+}
+
+.why-choose::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 0, 139, 0.15), transparent);
+  border-radius: 50%;
 }
 
 .why-content{
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .why-text h2{
   font-family: 'Playfair Display', serif;
   font-size: 52px;
   font-weight: 800;
-  color: var(--light-blue);
-  margin-bottom: 25px;
+  color: #F5F5F5;
+  margin-bottom: 30px;
   line-height: 1.2;
 }
 
 .why-text p{
-  font-size: 19px;
-  color: var(--text-light);
-  line-height: 1.8;
+  font-size: 18px;
+  color: #C8D8F8;
   margin-bottom: 40px;
+  line-height: 1.7;
 }
 
 .why-features{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .feature-item{
-  background: var(--pure-white);
-  padding: 30px;
-  border-radius: 15px;
-  border: 2px solid var(--border-elegant);
-  transition: all 0.3s ease;
   display: flex;
+  align-items: flex-start;
   gap: 20px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 139, 0.3);
+  transition: all 0.3s ease;
 }
 
 .feature-item:hover{
-  border-color: var(--light-blue);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #00008B;
   transform: translateX(10px);
-  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.1);
 }
 
 .feature-icon{
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, var(--light-blue), var(--dark-blue));
-  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+  background: #00008B;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -550,50 +673,140 @@ nav li:hover{
 }
 
 .feature-icon i{
-  font-size: 30px;
-  color: var(--pure-white);
+  font-size: 24px;
+  color: #F5F5F5;
 }
 
 .feature-content h4{
   font-family: 'Playfair Display', serif;
   font-size: 22px;
-  font-weight: 700;
-  color: var(--dark-navy);
-  margin-bottom: 10px;
+  color: #C8D8F8;
+  margin-bottom: 8px;
 }
 
 .feature-content p{
   font-size: 15px;
+  color: #C8D8F8;
+  margin: 0;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+  padding: 120px 40px;
+  background: var(--cream);
+}
+
+.testimonials-slider{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.testimonial-card{
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #00008b50;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 139, 0.12);
+}
+
+.quote-icon{
+  font-size: 48px;
+  color: #00008B;
+  opacity: 0.2;
+  margin-bottom: 20px;
+}
+
+.testimonial-text{
+  font-size: 18px;
+  color: var(--text-dark);
+  margin-bottom: 30px;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.testimonial-author{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author-avatar{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00008B, #4444CC);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #F5F5F5;
+}
+
+.author-info h5{
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--dark-navy);
+  margin-bottom: 3px;
+}
+
+.author-info p{
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
   color: var(--text-light);
-  line-height: 1.6;
+}
+
+.stars{
+  color: #00008B;
+  margin-top: 5px;
 }
 
 /* CTA SECTION */
 .cta-section{
   padding: 100px 40px;
-  background: linear-gradient(135deg, var(--light-blue), var(--dark-blue));
+  background: 
+    linear-gradient(135deg, rgba(10, 22, 40, 0.95), rgba(44, 24, 16, 0.92)),
+    url('https://images.unsplash.com/photo-1505663912202-ac22d4cb3707?w=1920') center/cover no-repeat fixed;
   text-align: center;
+  position: relative;
+}
+
+.cta-content{
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .cta-content h2{
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 800;
-  color: var(--pure-white);
-  margin-bottom: 20px;
+  color: #F5F5F5;
+  margin-bottom: 25px;
+  line-height: 1.2;
 }
 
 .cta-content p{
   font-size: 20px;
-  color: rgba(255,255,255,0.9);
-  max-width: 700px;
-  margin: 0 auto 40px;
+  color: #C8D8F8;
+  margin-bottom: 40px;
 }
 
 /* FOOTER */
 footer{
-  background: linear-gradient(180deg, var(--dark-navy), var(--dark-blue));
-  color: var(--pure-white);
+  background: linear-gradient(180deg, var(--dark-navy), var(--rich-brown));
+  color: #F5F5F5;
   padding: 80px 40px 30px;
 }
 
@@ -609,39 +822,15 @@ footer{
 .footer-section h3{
   font-family: 'Playfair Display', serif;
   font-size: 24px;
-  color: var(--silver);
+  color: #F5F5F5;
   margin-bottom: 25px;
 }
 
 .footer-section p{
   font-size: 15px;
-  color: rgba(255,255,255,0.8);
+  color: #C8D8F8;
   line-height: 1.7;
   margin-bottom: 20px;
-}
-
-.social-links{
-  display: flex;
-  gap: 15px;
-}
-
-.social-links a{
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: rgba(59, 130, 246, 0.2);
-  border: 1px solid var(--light-blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--light-blue);
-  transition: all 0.3s ease;
-}
-
-.social-links a:hover{
-  background: var(--light-blue);
-  color: var(--pure-white);
-  transform: translateY(-3px);
 }
 
 .footer-section ul{
@@ -653,7 +842,7 @@ footer{
 }
 
 .footer-section a{
-  color: rgba(255,255,255,0.8);
+  color: #C8D8F8;
   text-decoration: none;
   font-size: 14px;
   transition: all 0.3s ease;
@@ -663,12 +852,38 @@ footer{
 }
 
 .footer-section a:hover{
-  color: var(--light-blue);
+  color: #00008B;
   transform: translateX(5px);
 }
 
+.social-links{
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(0, 0, 139, 0.15);
+  border: 1px solid #00008B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C8D8F8;
+  transition: all 0.3s ease;
+  transform: none;
+}
+
+.social-links a:hover{
+  background: #00008B;
+  color: #F5F5F5;
+  transform: translateY(-3px);
+}
+
 .footer-bottom{
-  border-top: 1px solid rgba(59, 130, 246, 0.2);
+  border-top: 1px solid rgba(245, 245, 245, 0.3);
   padding-top: 30px;
   text-align: center;
 }
@@ -676,15 +891,15 @@ footer{
 .footer-bottom p{
   font-family: 'Inter', sans-serif;
   font-size: 13px;
-  color: rgba(255,255,255,0.7);
+  color: #F5F5F5;
 }
 
 .footer-bottom a{
-  color: var(--light-blue);
+  color: #F5F5F5;
   text-decoration: none;
 }
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP BUTTON */
 .whatsapp-float{
   position: fixed;
   bottom: 30px;
@@ -698,38 +913,60 @@ footer{
   justify-content: center;
   font-size: 32px;
   color: white;
-  box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
   cursor: pointer;
   z-index: 999;
   animation: pulse 2s infinite;
+  transition: all 0.3s ease;
 }
 
 .whatsapp-float:hover{
   transform: scale(1.1);
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.6);
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp{
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes pulse{
-  0%, 100%{ transform: scale(1); }
-  50%{ transform: scale(1.05); }
+  0%, 100%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.05);
+  }
 }
 
 /* RESPONSIVE */
-@media (max-width: 1024px){
-  .practice-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
+@media(max-width: 1024px){
   .why-content{
     grid-template-columns: 1fr;
-    gap: 50px;
   }
   
   .footer-content{
     grid-template-columns: 1fr 1fr;
   }
+  
+  .hero h2{
+    font-size: 52px;
+  }
 }
 
-@media (max-width: 768px){
+@media(max-width: 768px){
+  .top-bar-content{
+    justify-content: center;
+    text-align: center;
+  }
+  
   nav{
     display: none;
   }
@@ -753,8 +990,8 @@ footer{
     display: block;
   }
   
-  .hero h1{
-    font-size: 42px;
+  .hero h2{
+    font-size: 40px;
   }
   
   .hero p{
@@ -765,20 +1002,27 @@ footer{
     font-size: 38px;
   }
   
-  .practice-grid{
-    grid-template-columns: 1fr;
-  }
-  
-  .why-features{
+  .practice-grid,
+  .testimonials-slider{
     grid-template-columns: 1fr;
   }
   
   .footer-content{
     grid-template-columns: 1fr;
   }
+  
+  .trust-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .trust-item{
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 139, 0.2);
+  }
 }
 </style>
 </head>
+
 <body>
 
 <!-- HEADER -->
@@ -789,10 +1033,14 @@ footer{
         <i class="fas fa-phone"></i>
         <span>+91 8605871448</span>
       </div>
-      <div class="top-bar-item">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:imran@silegalservices.com">imran@silegalservices.com</a>
-      </div>
+	  <div class="top-bar-item">
+	  <i class="fas fa-envelope"></i>
+	  <span>
+		<a href="mailto:imran@silegalservices.com">
+		  imran@silegalservices.com
+		</a>
+	  </span>
+	</div>	
       <div class="top-bar-item">
         <i class="fas fa-clock"></i>
         <span>Mon - Sat: 9AM - 6PM</span>
@@ -822,6 +1070,7 @@ footer{
     <nav id="nav">
       <ul>
         <li onclick="window.location.href='index.html'">Home</li>
+        <!-- <li onclick="scrollToSection('practice-areas')">Practice Areas</li> -->
         <li onclick="window.location.href='premium-about.html'">About Us</li>
         <li onclick="window.location.href='premium-contact.html'">Contact</li>
         <li>
@@ -835,17 +1084,49 @@ footer{
 </header>
 
 <!-- HERO SECTION -->
-<section class="hero">
+<section class="hero" id="hero">
   <div class="hero-content">
-    <h1>Expert Legal Services<br>by <span class="highlight">Trusted Advocates</span></h1>
-    <p>Your reliable legal partner for honest advice and strong representation in Nanded, Maharashtra</p>
+    <div class="hero-badge">
+      <span>★ Rated 4.9/5 by 200+ Clients</span>
+    </div>
+    
+    <h2>Expert Legal Solutions <br>for <span class="highlight">Every Challenge</span></h2>
+    
+    <p>Providing professional legal services in criminal defence, civil disputes, cyber crime, matrimonial and consumer cases. Your reliable legal partner for honest advice and strong representation.</p>
+    
     <div class="hero-buttons">
       <button class="btn btn-primary" onclick="openWhatsApp()">
-        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        <i class="fab fa-whatsapp"></i> Get Free Consultation
       </button>
-      <button class="btn btn-secondary" onclick="window.location.href='tel:+918605871448'">
-        <i class="fas fa-phone"></i> Call Now
+      <button class="btn btn-secondary" onclick="scrollToSection('practice-areas')">
+        <i class="fas fa-gavel"></i> Our Services
       </button>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST SECTION -->
+<section class="trust-section">
+  <div class="trust-container">
+    <div class="trust-item">
+      <h3>200+</h3>
+      <p>Cases Won</p>
+    </div>
+    <div class="trust-item">
+      <h3>100%</h3>
+      <p>Success Rate</p>
+    </div>
+    <div class="trust-item">
+      <h3>5+</h3>
+      <p>Expert Advocates</p>
+    </div>
+    <div class="trust-item">
+      <h3>7+</h3>
+      <p>Years Experience</p>
+    </div>
+    <div class="trust-item">
+      <h3>24/7</h3>
+      <p>Legal Support</p>
     </div>
   </div>
 </section>
@@ -853,62 +1134,65 @@ footer{
 <!-- PRACTICE AREAS -->
 <section class="practice-areas" id="practice-areas">
   <div class="section-header">
-    <h2>Our Practice Areas</h2>
-    <p>Comprehensive legal solutions across multiple domains with expert representation and personalized attention</p>
+    <div class="section-badge">
+      <span>Our Expertise</span>
+    </div>
+    <h2>Comprehensive Legal Services</h2>
+    <p>Expert legal solutions for criminal, civil & cyber cases with a proven track record of success.</p>
   </div>
   
   <div class="practice-grid">
     <article class="practice-card">
       <div class="practice-icon">
-        <i class="fas fa-gavel"></i>
+        <i class="fas fa-user-shield"></i>
       </div>
-      <h3>Criminal Defence</h3>
-      <p>Expert defense in criminal cases including bail applications, trials, appeals, anticipatory bail, and complete criminal litigation support with proven track record.</p>
+      <h3>Criminal Defence </h3>
+      <p>Criminal defences lawyer,strong legal representation for bail, FTR quashing,trails Appeals and criminal cases before JMFC, DistrictCourt and High Court.</p>
       <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
     </article>
-
+    
     <article class="practice-card">
       <div class="practice-icon">
         <i class="fas fa-laptop-code"></i>
       </div>
-      <h3>Cyber Crime</h3>
-      <p>Specialized services in cyber law, online fraud, bank account freezing cases, digital evidence handling, hacking incidents, and complete cyber crime investigation support.</p>
+      <h3>Cyber Crime & Fraud</h3>
+      <p>Cyber crime and online Fraud lawyer. Expert legal help for online Fraud,bank account freeze , UPI fraud, Share market fraud, hacking, Cyber complaints and IT act Cases with fast action.</p>
       <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
     </article>
-
+    
     <article class="practice-card">
       <div class="practice-icon">
-        <i class="fas fa-balance-scale"></i>
+        <i class="fas fa-university"></i>
       </div>
-      <h3>Civil Litigation</h3>
-      <p>Complete civil case representation including property disputes, contract breaches, recovery suits, injunctions, specific performance, and civil appeals.</p>
+      <h3>Bank Account Freezing</h3>
+      <p>Expert legal assistance for frozen bank accounts, unfreezing procedures, dealing with financial institutions, and protecting your financial rights with quick action.</p>
       <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
     </article>
-
+    
     <article class="practice-card">
       <div class="practice-icon">
-        <i class="fas fa-heart"></i>
+        <i class="fas fa-home"></i>
       </div>
-      <h3>Family & Matrimonial Law</h3>
-      <p>Sensitive handling of divorce, maintenance, custody, domestic violence, court marriage, mutual consent divorce, and complete matrimonial dispute resolution.</p>
+      <h3>Family & Matrimonial Matter</h3>
+      <p>Family and matrimonial lawyer, Trusted legal support for divorce, mutual consent divorce, maintenance, child custody, domestic violence and family disputes.</p>
       <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
     </article>
-
+    
     <article class="practice-card">
       <div class="practice-icon">
-        <i class="fas fa-shopping-cart"></i>
-      </div>
-      <h3>Consumer Cases</h3>
-      <p>Expert representation in consumer forums for deficiency in service, defective products, unfair trade practices, and complete consumer dispute resolution.</p>
-      <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
-    </article>
-
-    <article class="practice-card">
-      <div class="practice-icon">
-        <i class="fas fa-briefcase"></i>
+        <i class="fas fa-building"></i>
       </div>
       <h3>Corporate & Business Law</h3>
-      <p>Company formation, compliance, contracts, mergers, acquisitions, partnership deeds, shareholder agreements, and complete business legal advisory services.</p>
+      <p>Corporate & Business legal services company Corporate legal solution including company registration, agreements,contracts, compliance,mergs and logal notices.</p>
+      <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
+    </article>
+    
+    <article class="practice-card">
+      <div class="practice-icon">
+        <i class="fas fa-landmark"></i>
+      </div>
+      <h3>Civil Litigation</h3>
+      <p>Civil Litigation lawyer, professional handling of peroperty disputes, recovery suites,Injuction, Portion matters and civil cases in all courts.</p>
       <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
     </article>
 
@@ -916,17 +1200,80 @@ footer{
       <div class="practice-icon">
         <i class="fas fa-handshake"></i>
       </div>
-      <h3>Arbitration & Mediation</h3>
-      <p>Alternative dispute resolution through arbitration, mediation, conciliation, negotiation support, and out-of-court settlements for faster resolution.</p>
+      <h3>Arbitration</h3>
+      <p>Alternative dispute resolution through arbitration proceedings, mediation services, settlement negotiations, and cost-effective conflict resolution outside court systems.</p>
       <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
     </article>
 
     <article class="practice-card">
       <div class="practice-icon">
+        <i class="fas fa-file-contract"></i>
+      </div>
+      <h3>Section 138 NI Act</h3>
+      <p>Legal representation for dishonored cheque cases under Negotiable Instruments Act, filing complaints, defending accused, and securing compensation for bounced cheques.</p>
+      <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
+    </article>
+    
+    <article class="practice-card">
+      <div class="practice-icon">
         <i class="fas fa-passport"></i>
       </div>
       <h3>Passport Services</h3>
-      <p>Complete passport application assistance, police verification support, objection clearance, renewal, name corrections, and legal documentation for passport issues.</p>
+      <p>Complete assistance with passport applications, renewals, police verification issues, objection clearance, tatkal services, and all passport-related legal matters.</p>
+      <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
+    </article>
+
+    <article class="practice-card">
+      <div class="practice-icon">
+        <i class="fas fa-ring"></i>
+      </div>
+      <h3>Court Marriage</h3>
+      <p>Hassle-free court marriage registration, documentation, witness arrangement, same-day marriage services, and all legal formalities for registered marriages under Special Marriage Act.</p>
+      <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
+    </article>
+
+    <article class="practice-card">
+      <div class="practice-icon">
+        <i class="fas fa-file-alt"></i>
+      </div>
+      <h3>Birth & Death Certificates</h3>
+      <p>Legal assistance for birth certificate registration, death certificate applications, correction in certificates, late registration, and all municipal corporation documentation.</p>
+      <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
+    </article>
+
+    <article class="practice-card">
+      <div class="practice-icon">
+        <i class="fas fa-id-card"></i>
+      </div>
+      <h3>Name & Surname Changes</h3>
+      <p>Complete legal process for name change, surname correction, gazette notification, newspaper publication, and updating documents across all government records.</p>
+      <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
+    </article>
+
+    <article class="practice-card">
+      <div class="practice-icon">
+        <i class="fas fa-car"></i>
+      </div>
+      <h3>RTO Challan</h3>
+      <p>Legal assistance for traffic violations, RTO challan disputes, license suspension matters, vehicle seizure cases, and representation before transport authorities.</p>
+      <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
+    </article>
+
+    <article class="practice-card">
+      <div class="practice-icon">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <h3>Police Station Draft</h3>
+      <p>Expert drafting of FIR, complaint applications, replies to police notices, anticipatory bail applications, and all legal documentation for police station matters.</p>
+      <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
+    </article>
+
+    <article class="practice-card">
+      <div class="practice-icon">
+        <i class="fas fa-file-signature"></i>
+      </div>
+      <h3>Documentation Services</h3>
+      <p>Legal Documentation & Notary services, Quick assistance for name correction, affidavits, agreements, notarization, passport matters and legal Documentation.</p>
       <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
     </article>
 
@@ -934,8 +1281,8 @@ footer{
       <div class="practice-icon">
         <i class="fas fa-copyright"></i>
       </div>
-      <h3>Copyright Law</h3>
-      <p>Copyright registration, infringement cases, licensing agreements, royalty disputes, plagiarism litigation, and complete intellectual property protection for creative works.</p>
+      <h3>Law of Copyright</h3>
+      <p>Copyright registration, infringement cases, licensing agreements, DMCA notices, protection of creative works, and enforcement of copyright laws for authors and creators.</p>
       <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
     </article>
 
@@ -956,6 +1303,8 @@ footer{
       <p>Trademark registration, brand protection, opposition proceedings, infringement cases, renewal services, and complete trademark portfolio management for businesses.</p>
       <a href="#" class="practice-link">Learn More <i class="fas fa-arrow-right"></i></a>
     </article>
+	
+	
   </div>
 </section>
 
@@ -1019,7 +1368,7 @@ footer{
 <section class="cta-section">
   <div class="cta-content">
     <h2>Need Expert Legal Advice?</h2>
-    <p>Get a free consultation from our experienced advocates. Available 24/7 to discuss your legal matters.</p>
+    <p>Get professional legal consultation from experienced advocate in criminal,civil,matrimonial & Cyber law, trademark. <Br> Quick Response and priority assistancefor urgent legal matters.</p>
     <div class="hero-buttons">
       <button class="btn btn-primary" onclick="openWhatsApp()">
         <i class="fab fa-whatsapp"></i> Chat on WhatsApp
@@ -1036,7 +1385,7 @@ footer{
   <div class="footer-content">
     <div class="footer-section">
       <h3>SI Legal Services</h3>
-      <p>Premier law firm providing comprehensive legal solutions in Nanded, Maharashtra with expertise, integrity, and excellence. Your reliable legal partner for honest advice and strong representation.</p>
+      <p>Trusted Si Legal services Providing Criminal,civil,matrimonial and cyber crime fraud,Trademark legal Services in india with integrity, professionalism and client focused solution since.</p>
       <div class="social-links">
         <a href="https://www.facebook.com/share/p/1Kb4KimK3r/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -1049,6 +1398,7 @@ footer{
       <h3>Quick Links</h3>
       <ul>
         <li><a href="premium-about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+        <!-- <li><a href="index.html#practice-areas"><i class="fas fa-chevron-right"></i> Practice Areas</a></li> -->
         <li><a href="premium-contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
       </ul>
     </div>
@@ -1057,12 +1407,11 @@ footer{
       <h3>Legal Services</h3>
       <ul>
         <li><a href="#"><i class="fas fa-chevron-right"></i> Criminal Defence</a></li>
-        <li><a href="#"><i class="fas fa-chevron-right"></i> Cyber Crime</a></li>
+        <li><a href="#"><i class="fas fa-chevron-right"></i> Cyber Crime and Online Fraud</a></li>
         <li><a href="#"><i class="fas fa-chevron-right"></i> Family Law</a></li>
         <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Law</a></li>
         <li><a href="#"><i class="fas fa-chevron-right"></i> Civil Litigation</a></li>
-        <li><a href="#"><i class="fas fa-chevron-right"></i> Arbitration</a></li>
-        <li><a href="#"><i class="fas fa-chevron-right"></i> Trademark & IP</a></li>
+        <li><a href="#"><i class="fas fa-chevron-right"></i> Trademark & Patent</a></li>
       </ul>
     </div>
     
@@ -1070,7 +1419,12 @@ footer{
       <h3>Contact Info</h3>
       <ul>
         <li><a href="tel:+918605871448"><i class="fas fa-phone"></i> +91 8605871448</a></li>
-        <li><a href="mailto:imran@silegalservices.com"><i class="fas fa-envelope"></i> imran@silegalservices.com</a></li>
+        <li>
+          <a href="mailto:imran@silegalservices.com">
+            <i class="fas fa-envelope"></i>
+            imran@silegalservices.com
+          </a>
+        </li>
         <li><a href="#"><i class="fas fa-map-marker-alt"></i> Nanded, Maharashtra</a></li>
         <li><a href="#"><i class="fas fa-clock"></i> Mon-Sat: 9AM-6PM</a></li>
       </ul>
@@ -1087,13 +1441,13 @@ footer{
       . All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
     </p>
     <p style="margin-top: 10px; font-size: 14px;">
-      <i class="fas fa-calendar-alt" style="color: var(--light-blue); margin-right: 8px;"></i>
-      <span id="footerDateTime" style="color: var(--silver);"></span>
+      <i class="fas fa-calendar-alt" style="color: #F5F5F5; margin-right: 8px;"></i>
+      <span id="footerDateTime" style="color: #C8D8F8;"></span>
     </p>
-    <div style="margin-top:15px;padding:10px 20px;background:rgba(59,130,246,0.1);border-radius:30px;display:inline-block;border:1px solid rgba(59,130,246,0.3)">
-      <i class="fas fa-eye" style="color:var(--light-blue);margin-right:8px"></i>
-      <span style="color:var(--silver);font-family:'Inter',sans-serif;font-size:13px">Total Visitors: </span>
-      <span id="visitorCount" style="color:var(--light-blue);font-family:monospace;font-size:15px;font-weight:700">000000</span>
+    <div style="margin-top:15px;padding:10px 20px;background:rgba(0,0,139,0.1);border-radius:30px;display:inline-block;border:1px solid rgba(0,0,139,0.3)">
+      <i class="fas fa-eye" style="color:#F5F5F5;margin-right:8px"></i>
+      <span style="color:#C8D8F8;font-family:'Inter',sans-serif;font-size:13px">Total Visitors: </span>
+      <span id="visitorCount" style="color:#F5F5F5;font-family:monospace;font-size:15px;font-weight:700">000000</span>
     </div>
   </div>
 </footer>
@@ -1103,7 +1457,7 @@ footer{
   <i class="fab fa-whatsapp"></i>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // HEADER SCROLL EFFECT
 window.addEventListener('scroll', () => {
   const header = document.getElementById('header');
@@ -1180,16 +1534,15 @@ function updateVisitorCount() {
   // Save the new count
   localStorage.setItem('silegal_visitor_count', visitorCount);
   
-  // Display the count with leading zeros
+  // Display the count
   const visitorElement = document.getElementById('visitorCount');
   if (visitorElement) {
-    visitorElement.textContent = String(visitorCount).padStart(6, '0');
+    visitorElement.textContent = visitorCount.toString().padStart(6, '0');
   }
 }
 
-// Call on page load
+// Initialize visitor counter on page load
 updateVisitorCount();
 </script>
-
 </body>
 </html>
