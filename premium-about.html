@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Meta Tags for SEO -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Primary SEO Meta Tags -->
 <title>About Us - SI Legal Services | Award-Winning Since 2015</title>
 <meta name="title" content="About Us - SI Legal Services | Award-Winning Law Firm Since 2015">
 <meta name="description" content="Learn about SI Legal Services - Nanded's premier law firm with 10+ years of excellence. Meet our expert team of 5+ advocates specializing in criminal, civil, cyber, and corporate law. 200+ successful cases.">
 <meta name="keywords" content="about SI LEGAL, best law firm Nanded, experienced advocates, legal team Maharashtra, top lawyers Nanded, law firm history, expert legal team">
 <meta name="author" content="SI Legal Services">
 <meta name="robots" content="index, follow">
-
-<!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.silegalservices.com/about">
 <meta property="og:title" content="About SI Legal Services - Expert Legal Team">
 <meta property="og:description" content="Premier law firm in Nanded with 50+ expert advocates and 10 years of excellence in legal services.">
 <meta property="og:image" content="https://www.silegalservices.com/images/about-og.jpg">
-
-<!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://www.silegalservices.com/about">
 <meta property="twitter:title" content="About SI Legal Services">
 <meta property="twitter:description" content="Award-winning law firm with proven track record of 200+ successful cases.">
-
-<!-- Canonical URL -->
 <link rel="canonical" href="https://www.silegalservices.com/about">
-
-<!-- Favicon -->
 <link rel="icon" type="image/png" href="favicon.png">
-
-<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
@@ -51,19 +36,11 @@
   --accent-burgundy: #8B2635;
   --text-dark: #1a1a1a;
   --text-light: #4a4a4a;
-  --border-elegant: #00008B50;
+  --border-elegant: #00008b50;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html{
-  scroll-behavior: smooth;
-}
-
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
 body{
   font-family: 'Cormorant Garamond', serif;
   background: var(--cream);
@@ -72,972 +49,367 @@ body{
   overflow-x: hidden;
 }
 
-/* HEADER & NAVIGATION */
+/* ── HEADER — exact match to index.html ── */
 header{
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(10, 22, 40, 0.95);
+  background: rgba(14, 14, 235, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--primary-gold);
-  box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+  border-bottom: 1px solid #00008B;
+  transition: all 0.3s ease;
 }
+header.scrolled{ box-shadow: 0 5px 30px rgba(0,0,0,0.3); }
 
 .top-bar{
   background: linear-gradient(135deg, var(--rich-brown), var(--dark-navy));
   padding: 10px 0;
   font-family: 'Inter', sans-serif;
   font-size: 13px;
-  color: var(--cream);
+  color: #F5F5F5;
 }
-
 .top-bar-content{
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  max-width: 1400px; margin: 0 auto; padding: 0 40px;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 15px;
 }
-
-.top-bar-item{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.top-bar-item i{
-  color: var(--primary-gold);
-}
-
-.top-bar-item a{
-  color: var(--cream);
-  text-decoration: none;
-}
+.top-bar-item{ display: flex; align-items: center; gap: 8px; }
+.top-bar-item i{ color: #f5f5f5; }          /* matches index */
+.top-bar-item a{ color: #F5F5F5; text-decoration: none; }
 
 .nav-container{
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  max-width: 1400px; margin: 0 auto; padding: 20px 40px;
+  display: flex; justify-content: space-between; align-items: center;
 }
-
-.logo{
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  cursor: pointer;
-}
-
+.logo{ display: flex; align-items: center; gap: 15px; cursor: pointer; }
 .logo-icon{
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, var(--primary-gold), #C8D8F8);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  color: white;
-  font-weight: bold;
+  width: 50px; height: 50px;
+  background: linear-gradient(135deg, #00008B, #4444CC);
+  border-radius: 8px; display: flex; align-items: center;
+  justify-content: center; font-size: 24px;
+  color: #F5F5F5; font-weight: bold;
 }
-
 .logo-text h1{
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  font-weight: 800;
-  color: var(--primary-gold);
+  font-size: 28px; font-weight: 800;
+  color: #F5F5F5;              /* matches index */
   letter-spacing: 1px;
 }
-
 .logo-text p{
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  color: var(--light-gold);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-top: -5px;
+  font-family: 'Inter', sans-serif; font-size: 11px;
+  color: var(--light-gold);    /* matches index */
+  letter-spacing: 3px; text-transform: uppercase; margin-top: -5px;
 }
 
-nav ul{
-  list-style: none;
-  display: flex;
-  gap: 35px;
-  align-items: center;
-}
-
+nav ul{ list-style: none; display: flex; gap: 35px; align-items: center; }
 nav li{
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--cream);
-  cursor: pointer;
-  position: relative;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500;
+  color: #F5F5F5; cursor: pointer; position: relative;
+  letter-spacing: 0.5px; transition: all 0.3s ease;
 }
-
 nav li::after{
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--primary-gold);
+  content: ''; position: absolute; bottom: -5px; left: 0;
+  width: 0; height: 2px;
+  background: #fff;            /* matches index */
   transition: width 0.3s ease;
 }
-
-nav li:hover::after{
-  width: 100%;
-}
-
-nav li:hover{
-  color: var(--primary-gold);
-}
+nav li:hover::after{ width: 100%; }
+nav li:hover{ color: #fff; }  /* matches index */
 
 .cta-button{
-  background: linear-gradient(135deg, var(--primary-gold), #4444CC);
-  color: white;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 14px;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-  letter-spacing: 0.5px;
-  cursor: pointer;
+  background: linear-gradient(135deg, #00008B, #0000CD);
+  color: #F5F5F5; padding: 12px 30px; border-radius: 50px;
+  font-weight: 700; font-size: 14px; border: 2px solid transparent;
+  transition: all 0.3s ease; letter-spacing: 0.5px; cursor: pointer;
 }
-
 .cta-button:hover{
-  background: transparent;
-  border-color: var(--primary-gold);
-  color: var(--primary-gold);
+  background: transparent; border-color: #fff; color: #fff;
   transform: translateY(-2px);
 }
+.mobile-toggle{ display: none; font-size: 24px; color: #F5F5F5; cursor: pointer; }
 
-.mobile-toggle{
-  display: none;
-  font-size: 24px;
-  color: var(--primary-gold);
-  cursor: pointer;
-}
-
-/* PAGE HEADER */
+/* ── PAGE HEADER ── */
 .page-header{
   min-height: 50vh;
-  background: 
-    linear-gradient(135deg, rgba(10, 22, 40, 0.92), rgba(44, 24, 16, 0.88)),
+  background:
+    linear-gradient(135deg, rgba(10,22,40,0.92), rgba(44,24,16,0.88)),
     url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920') center/cover no-repeat fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 140px;
-  padding-bottom: 80px;
-  text-align: center;
-  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  padding-top: 140px; padding-bottom: 80px;
+  text-align: center; position: relative;
 }
-
 .page-header::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at center, rgba(0, 0, 139, 0.1), transparent 70%);
+  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at center, rgba(0,0,139,0.1), transparent 70%);
 }
-
-.page-header-content{
-  position: relative;
-  z-index: 1;
-  max-width: 900px;
-  padding: 0 40px;
-}
-
+.page-header-content{ position: relative; z-index: 1; max-width: 900px; padding: 0 40px; }
 .page-header h1{
-  font-family: 'Playfair Display', serif;
-  font-size: 68px;
-  font-weight: 800;
-  color: var(--cream);
-  margin-bottom: 20px;
-  line-height: 1.1;
+  font-family: 'Playfair Display', serif; font-size: 68px; font-weight: 800;
+  color: #F5F5F5; margin-bottom: 20px; line-height: 1.1;
 }
-
-.page-header p{
-  font-size: 22px;
-  color: var(--light-gold);
-  line-height: 1.6;
-}
-
+.page-header p{ font-size: 22px; color: #C8D8F8; line-height: 1.6; }
 .breadcrumb{
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 30px;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  color: var(--light-gold);
+  display: flex; justify-content: center; gap: 10px; margin-top: 30px;
+  font-family: 'Inter', sans-serif; font-size: 14px; color: #C8D8F8;
 }
+.breadcrumb a{ color: #00008B; text-decoration: none; transition: all 0.3s ease; }
+.breadcrumb a:hover{ color: #C8D8F8; }
 
-.breadcrumb a{
-  color: var(--primary-gold);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.breadcrumb a:hover{
-  color: var(--light-gold);
-}
-
-/* ABOUT INTRO */
-.about-intro{
-  padding: 100px 40px;
-  background: var(--cream);
-}
-
+/* ── ABOUT INTRO ── */
+.about-intro{ padding: 100px 40px; background: var(--cream); }
 .about-intro-content{
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
+  max-width: 1400px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
 }
-
 .about-image{
-  width: 100%;
-  height: 600px;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-  border: 8px solid white;
+  width: 100%; height: 600px; border-radius: 16px; object-fit: cover;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15); border: 8px solid white;
 }
-
 .about-text h2{
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  font-weight: 800;
-  color: var(--dark-navy);
-  margin-bottom: 30px;
-  line-height: 1.2;
+  font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 800;
+  color: var(--dark-navy); margin-bottom: 30px; line-height: 1.2;
 }
+.about-text h2 .highlight{ color: #00008B; }
+.about-text p{ font-size: 18px; color: var(--text-light); margin-bottom: 20px; line-height: 1.8; }
 
-.about-text h2 .highlight{
-  color: var(--primary-gold);
-}
-
-.about-text p{
-  font-size: 18px;
-  color: var(--text-light);
-  margin-bottom: 20px;
-  line-height: 1.8;
-}
-
-.stats-grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 40px;
-}
-
+.stats-grid{ display: grid; grid-template-columns: repeat(2,1fr); gap: 30px; margin-top: 40px; }
 .stat-box{
   padding: 30px;
-  background: white;
-  border-radius: 12px;
-  border: 2px solid var(--border-elegant);
-  text-align: center;
-  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #00008B, #4444CC); /* matches index trust section */
+  border-radius: 12px; border: 2px solid #00008b50;
+  text-align: center; transition: all 0.3s ease;
 }
-
 .stat-box:hover{
-  transform: translateY(-5px);
-  border-color: var(--primary-gold);
-  box-shadow: 0 15px 40px rgba(0, 0, 139, 0.2);
+  transform: translateY(-5px); border-color: #00008B;
+  box-shadow: 0 15px 40px rgba(0,0,139,0.2);
 }
-
 .stat-box h3{
-  font-family: 'Playfair Display', serif;
-  font-size: 52px;
-  font-weight: 800;
-  color: #f5f5f5;
-  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 800; /* 48px in trust; 52 here is fine */
+  color: #F5F5F5; margin-bottom: 10px;
+  text-shadow: 0 0 20px rgba(100,100,255,0.3);
 }
-
 .stat-box p{
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  color: var(--text-dark);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0;
+  font-family: 'Inter', sans-serif; font-size: 14px;
+  color: #C8D8F8; text-transform: uppercase; letter-spacing: 1px; margin: 0;
 }
 
-/* MISSION VISION */
+/* ── MISSION VISION ── */
 .mission-vision{
   padding: 100px 40px;
   background: linear-gradient(135deg, var(--dark-navy), var(--rich-brown));
 }
-
 .mv-container{
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  max-width: 1400px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(2,1fr); gap: 50px;
 }
-
 .mv-card{
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(0, 0, 139, 0.3);
-  border-radius: 16px;
-  padding: 50px;
-  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.05); border: 2px solid rgba(0,0,139,0.3);
+  border-radius: 16px; padding: 50px; transition: all 0.3s ease;
 }
-
-.mv-card:hover{
-  background: rgba(255, 255, 255, 0.08);
-  border-color: var(--primary-gold);
-  transform: translateY(-10px);
-}
-
+.mv-card:hover{ background: rgba(255,255,255,0.08); border-color: #00008B; transform: translateY(-10px); }
 .mv-icon{
-  width: 80px;
-  height: 80px;
-  background: var(--primary-gold);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
+  width: 80px; height: 80px; background: #00008B;
+  border-radius: 16px; display: flex; align-items: center;
+  justify-content: center; margin-bottom: 30px;
 }
-
-.mv-icon i{
-  font-size: 40px;
-  color: white;
-}
-
+.mv-icon i{ font-size: 40px; color: #F5F5F5; }
 .mv-card h3{
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: var(--primary-gold);
-  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700;
+  color: #F5F5F5; margin-bottom: 20px;
 }
+.mv-card p{ font-size: 18px; color: #C8D8F8; line-height: 1.8; }
 
-.mv-card p{
-  font-size: 18px;
-  color: var(--light-gold);
-  line-height: 1.8;
-}
-
-/* CORE VALUES */
-.core-values{
-  padding: 100px 40px;
-  background: var(--cream);
-}
-
-.values-header{
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 80px;
-}
-
+/* ── CORE VALUES ── */
+.core-values{ padding: 100px 40px; background: var(--cream); }
+.values-header{ text-align: center; max-width: 800px; margin: 0 auto 80px; }
 .values-header h2{
-  font-family: 'Playfair Display', serif;
-  font-size: 52px;
-  font-weight: 800;
-  color: var(--dark-navy);
-  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 800;
+  color: var(--dark-navy); margin-bottom: 20px;
 }
-
-.values-header p{
-  font-size: 20px;
-  color: var(--text-light);
-}
-
+.values-header p{ font-size: 20px; color: var(--text-light); }
 .values-grid{
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  max-width: 1400px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 40px;
 }
-
 .value-card{
-  background: white;
-  padding: 50px 40px;
-  border-radius: 16px;
-  text-align: center;
-  border: 2px solid var(--border-elegant);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  background: white; padding: 50px 40px; border-radius: 16px; text-align: center;
+  border: 1px solid #00008b50; transition: all 0.3s ease;
+  position: relative; overflow: hidden;
 }
-
 .value-card::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg, var(--primary-gold), var(--accent-burgundy));
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, #00008B, #8B2635);
+  transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease;
 }
-
-.value-card:hover::before{
-  transform: scaleX(1);
-}
-
+.value-card:hover::before{ transform: scaleX(1); }
 .value-card:hover{
-  transform: translateY(-10px);
-  border-color: var(--primary-gold);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px); border-color: #00008B;
+  box-shadow: 0 20px 60px rgba(0,0,139,0.15);
 }
-
 .value-icon{
-  width: 90px;
-  height: 90px;
-  background: linear-gradient(135deg, var(--primary-gold), #C8D8F8);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 25px;
-  transition: all 0.3s ease;
+  width: 90px; height: 90px;
+  background: linear-gradient(135deg, #00008B, #4444CC);
+  border-radius: 50%; display: flex; align-items: center;
+  justify-content: center; margin: 0 auto 25px; transition: all 0.3s ease;
 }
-
-.value-card:hover .value-icon{
-  transform: scale(1.1) rotate(360deg);
-}
-
-.value-icon i{
-  font-size: 40px;
-  color: white;
-}
-
+.value-card:hover .value-icon{ transform: scale(1.1) rotate(360deg); }
+.value-icon i{ font-size: 40px; color: #F5F5F5; }
 .value-card h4{
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--dark-navy);
-  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700;
+  color: var(--dark-navy); margin-bottom: 15px;
 }
+.value-card p{ font-size: 16px; color: var(--text-light); line-height: 1.7; }
 
-.value-card p{
-  font-size: 16px;
-  color: var(--text-light);
-  line-height: 1.7;
-}
-
-/* TEAM SECTION */
-.team-section{
-  padding: 100px 40px;
-  background: white;
-}
-
-.team-header{
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 80px;
-}
-
-.team-header h2{
-  font-family: 'Playfair Display', serif;
-  font-size: 52px;
-  font-weight: 800;
-  color: var(--dark-navy);
-  margin-bottom: 20px;
-}
-
-.team-header p{
-  font-size: 20px;
-  color: var(--text-light);
-}
-
-.team-grid{
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-}
-
-.team-card{
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 2px solid var(--border-elegant);
-  transition: all 0.4s ease;
-}
-
-.team-card:hover{
-  transform: translateY(-15px);
-  border-color: var(--primary-gold);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
-}
-
-.team-image-container{
-  height: 350px;
-  overflow: hidden;
-  position: relative;
-  background: linear-gradient(135deg, var(--dark-navy), var(--rich-brown));
-}
-
-.team-image{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 0.4s ease;
-}
-
-.team-card:hover .team-image{
-  transform: scale(1.1);
-}
-
-.team-overlay{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-  padding: 30px 25px 20px;
-  transform: translateY(100%);
-  transition: all 0.4s ease;
-}
-
-.team-card:hover .team-overlay{
-  transform: translateY(0);
-}
-
-.social-links{
-  display: flex;
-  gap: 12px;
-}
-
-.social-links a{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgba(0, 0, 139, 0.2);
-  border: 1px solid var(--primary-gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary-gold);
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.social-links a:hover{
-  background: var(--primary-gold);
-  color: white;
-}
-
-.team-info{
-  padding: 30px;
-  text-align: center;
-}
-
-.team-info h4{
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--dark-navy);
-  margin-bottom: 8px;
-}
-
-.team-role{
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  color: var(--primary-gold);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-}
-
-.team-info p{
-  font-size: 15px;
-  color: var(--text-light);
-  line-height: 1.6;
-}
-
-/* TIMELINE */
-.timeline-section{
-  padding: 100px 40px;
-  background: var(--cream);
-}
-
-.timeline-header{
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 80px;
-}
-
+/* ── TIMELINE ── */
+.timeline-section{ padding: 100px 40px; background: var(--cream); }
+.timeline-header{ text-align: center; max-width: 800px; margin: 0 auto 80px; }
 .timeline-header h2{
-  font-family: 'Playfair Display', serif;
-  font-size: 52px;
-  font-weight: 800;
-  color: var(--dark-navy);
-  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 800;
+  color: var(--dark-navy); margin-bottom: 20px;
 }
-
-.timeline{
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
-  padding: 40px 0;
-}
-
+.timeline-header p{ font-size: 20px; color: var(--text-light); }
+.timeline{ max-width: 1000px; margin: 0 auto; position: relative; padding: 40px 0; }
 .timeline::before{
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: linear-gradient(to bottom, var(--primary-gold), var(--accent-burgundy));
+  content: ''; position: absolute; left: 50%; top: 0; bottom: 0;
+  width: 3px; background: linear-gradient(to bottom, #00008B, #8B2635);
   transform: translateX(-50%);
 }
-
-.timeline-item{
-  display: flex;
-  margin-bottom: 60px;
-  position: relative;
-}
-
-.timeline-item:nth-child(odd){
-  flex-direction: row;
-}
-
-.timeline-item:nth-child(even){
-  flex-direction: row-reverse;
-}
-
+.timeline-item{ display: flex; margin-bottom: 60px; position: relative; }
+.timeline-item:nth-child(odd){ flex-direction: row; }
+.timeline-item:nth-child(even){ flex-direction: row-reverse; }
 .timeline-content{
-  width: 45%;
-  background: white;
-  padding: 35px;
-  border-radius: 12px;
-  border: 2px solid var(--border-elegant);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 45%; background: white; padding: 35px; border-radius: 12px;
+  border: 1px solid #00008b50; box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
 }
-
 .timeline-content:hover{
-  transform: translateY(-10px);
-  border-color: var(--primary-gold);
-  box-shadow: 0 20px 50px rgba(0, 0, 139, 0.2);
+  transform: translateY(-10px); border-color: #00008B;
+  box-shadow: 0 20px 50px rgba(0,0,139,0.2);
 }
-
 .timeline-year{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 80px;
-  background: var(--primary-gold);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  font-weight: 800;
-  color: white;
-  border: 4px solid var(--cream);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  position: absolute; left: 50%; transform: translateX(-50%);
+  width: 80px; height: 80px; background: #00008B; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 800;
+  color: #F5F5F5; border: 4px solid var(--cream);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
-
 .timeline-content h4{
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--dark-navy);
-  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700;
+  color: var(--dark-navy); margin-bottom: 15px;
 }
+.timeline-content p{ font-size: 16px; color: var(--text-light); line-height: 1.7; }
 
-.timeline-content p{
-  font-size: 16px;
-  color: var(--text-light);
-  line-height: 1.7;
-}
-
-/* CTA SECTION */
+/* ── CTA SECTION ── */
 .cta-section{
   padding: 100px 40px;
-  background: 
-    linear-gradient(135deg, rgba(10, 22, 40, 0.95), rgba(44, 24, 16, 0.92)),
+  background:
+    linear-gradient(135deg, rgba(10,22,40,0.95), rgba(44,24,16,0.92)),
     url('https://images.unsplash.com/photo-1505663912202-ac22d4cb3707?w=1920') center/cover no-repeat fixed;
   text-align: center;
 }
-
-.cta-content{
-  max-width: 900px;
-  margin: 0 auto;
-}
-
+.cta-content{ max-width: 900px; margin: 0 auto; }
 .cta-content h2{
-  font-family: 'Playfair Display', serif;
-  font-size: 56px;
-  font-weight: 800;
-  color: var(--cream);
-  margin-bottom: 25px;
-  line-height: 1.2;
+  font-family: 'Playfair Display', serif; font-size: 56px; font-weight: 800;
+  color: #F5F5F5; margin-bottom: 25px; line-height: 1.2;
 }
-
-.cta-content p{
-  font-size: 20px;
-  color: var(--light-gold);
-  margin-bottom: 40px;
-}
+.cta-content p{ font-size: 20px; color: #C8D8F8; margin-bottom: 40px; }
 
 .btn{
-  padding: 18px 40px;
-  border-radius: 50px;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  letter-spacing: 0.5px;
+  padding: 18px 40px; border-radius: 50px; font-family: 'Inter', sans-serif;
+  font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.3s ease;
+  border: 2px solid transparent; display: inline-flex; align-items: center;
+  gap: 10px; text-decoration: none; letter-spacing: 0.5px;
 }
-
 .btn-primary{
-  background: linear-gradient(135deg, var(--primary-gold), #4444CC);
-  color: white;
-  box-shadow: 0 10px 40px rgba(0, 0, 139, 0.3);
+  background: linear-gradient(135deg, #00008B, #0000CD);
+  color: #F5F5F5; box-shadow: 0 10px 40px rgba(0,0,139,0.4);
 }
+.btn-primary:hover{ transform: translateY(-3px); box-shadow: 0 15px 50px rgba(0,0,139,0.6); }
+.btn-secondary{ background: transparent; color: #F5F5F5; border-color: #F5F5F5; }
+.btn-secondary:hover{ background: #F5F5F5; color: var(--dark-navy); }
 
-.btn-primary:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 15px 50px rgba(0, 0, 139, 0.5);
-}
-
-/* FOOTER */
+/* ── FOOTER — exact match to index.html ── */
 footer{
   background: linear-gradient(180deg, var(--dark-navy), var(--rich-brown));
-  color: var(--cream);
-  padding: 80px 40px 30px;
+  color: #F5F5F5; padding: 80px 40px 30px;
 }
-
 .footer-content{
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 60px;
-  margin-bottom: 50px;
+  max-width: 1400px; margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; margin-bottom: 50px;
 }
-
 .footer-section h3{
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  color: var(--primary-gold);
-  margin-bottom: 25px;
+  font-family: 'Playfair Display', serif; font-size: 24px;
+  color: #F5F5F5; margin-bottom: 25px;
 }
-
-.footer-section p{
-  font-size: 15px;
-  color: var(--light-gold);
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-.footer-section ul{
-  list-style: none;
-}
-
-.footer-section li{
-  margin-bottom: 12px;
-}
-
+.footer-section p{ font-size: 15px; color: #C8D8F8; line-height: 1.7; margin-bottom: 20px; }
+.footer-section ul{ list-style: none; }
+.footer-section li{ margin-bottom: 12px; }
 .footer-section a{
-  color: var(--light-gold);
-  text-decoration: none;
-  font-size: 14px;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  color: #C8D8F8; text-decoration: none; font-size: 14px;
+  transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 8px;
 }
+.footer-section a:hover{ color: #f5f5f5; transform: translateX(5px); }
 
-.footer-section a:hover{
-  color: var(--primary-gold);
-  transform: translateX(5px);
-}
-
-.footer-social{
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
-}
-
+.footer-social{ display: flex; gap: 15px; margin-top: 20px; }
 .footer-social a{
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: rgba(0, 0, 139, 0.1);
-  border: 1px solid var(--primary-gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary-gold);
-  transition: all 0.3s ease;
-  transform: none;
+  width: 45px; height: 45px; border-radius: 50%;
+  background: rgba(0,0,139,0.15); border: 1px solid #fff;
+  display: flex; align-items: center; justify-content: center;
+  color: #C8D8F8; transition: all 0.3s ease; transform: none;
 }
+.footer-social a:hover{ background: #fff; color: #000; transform: translateY(-3px); }
 
-.footer-social a:hover{
-  background: var(--primary-gold);
-  color: white;
-  transform: translateY(-3px);
-}
+.footer-bottom{ border-top: 1px solid rgba(245,245,245,0.3); padding-top: 30px; text-align: center; }
+.footer-bottom p{ font-family: 'Inter', sans-serif; font-size: 13px; color: #F5F5F5; }
+.footer-bottom a{ color: #F5F5F5; text-decoration: none; }
 
-.footer-bottom{
-  border-top: 1px solid rgba(0, 0, 139, 0.2);
-  padding-top: 30px;
-  text-align: center;
-}
-
-.footer-bottom p{
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  color: var(--light-gold);
-}
-
-.footer-bottom a{
-  color: var(--primary-gold);
-  text-decoration: none;
-}
-
-/* WHATSAPP */
+/* ── WHATSAPP ── */
 .whatsapp-float{
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 65px;
-  height: 65px;
+  position: fixed; bottom: 30px; right: 30px;
+  width: 65px; height: 65px;
   background: linear-gradient(135deg, #25d366, #128C7E);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  color: white;
-  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
-  cursor: pointer;
-  z-index: 999;
-  animation: pulse 2s infinite;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 32px; color: white; box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+  cursor: pointer; z-index: 999; animation: pulse 2s infinite; transition: all 0.3s ease;
 }
+.whatsapp-float:hover{ transform: scale(1.1); box-shadow: 0 12px 40px rgba(37,211,102,0.6); }
 
-.whatsapp-float:hover{
-  transform: scale(1.1);
+@keyframes fadeInUp{
+  from{ opacity: 0; transform: translateY(30px); }
+  to{ opacity: 1; transform: translateY(0); }
 }
-
 @keyframes pulse{
-  0%, 100%{transform: scale(1)}
-  50%{transform: scale(1.05)}
+  0%, 100%{ transform: scale(1); }
+  50%{ transform: scale(1.05); }
 }
 
-/* RESPONSIVE */
+/* ── RESPONSIVE ── */
 @media(max-width: 1024px){
-  .about-intro-content{
-    grid-template-columns: 1fr;
-  }
-  
-  .mv-container{
-    grid-template-columns: 1fr;
-  }
-  
-  .values-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .footer-content{
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .timeline::before{
-    left: 30px;
-  }
-  
-  .timeline-item{
-    flex-direction: row !important;
-  }
-  
-  .timeline-content{
-    width: calc(100% - 100px);
-    margin-left: 100px;
-  }
-  
-  .timeline-year{
-    left: 30px;
-  }
+  .about-intro-content{ grid-template-columns: 1fr; }
+  .mv-container{ grid-template-columns: 1fr; }
+  .values-grid{ grid-template-columns: repeat(2,1fr); }
+  .footer-content{ grid-template-columns: 1fr 1fr; }
+  .timeline::before{ left: 30px; }
+  .timeline-item{ flex-direction: row !important; }
+  .timeline-content{ width: calc(100% - 100px); margin-left: 100px; }
+  .timeline-year{ left: 30px; }
 }
-
 @media(max-width: 768px){
-  nav{
-    display: none;
-  }
-  
+  .top-bar-content{ justify-content: center; text-align: center; }
+  nav{ display: none; }
   nav.active{
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--dark-navy);
-    padding: 20px;
+    display: block; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--dark-navy); padding: 20px;
   }
-  
-  nav ul{
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .mobile-toggle{
-    display: block;
-  }
-  
-  .page-header h1{
-    font-size: 42px;
-  }
-  
-  .about-text h2,
-  .values-header h2,
-  .team-header h2,
-  .timeline-header h2{
-    font-size: 36px;
-  }
-  
-  .values-grid{
-    grid-template-columns: 1fr;
-  }
-  
-  .team-grid{
-    grid-template-columns: 1fr;
-  }
-  
-  .footer-content{
-    grid-template-columns: 1fr;
-  }
-  
-  .stats-grid{
-    grid-template-columns: 1fr;
-  }
+  nav ul{ flex-direction: column; gap: 20px; }
+  .mobile-toggle{ display: block; }
+  .page-header h1{ font-size: 42px; }
+  .about-text h2, .values-header h2, .timeline-header h2{ font-size: 36px; }
+  .values-grid{ grid-template-columns: 1fr; }
+  .footer-content{ grid-template-columns: 1fr; }
+  .stats-grid{ grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -1045,7 +417,7 @@ footer{
 <body>
 
 <!-- HEADER -->
-<header>
+<header id="header">
   <div class="top-bar">
     <div class="top-bar-content">
       <div class="top-bar-item">
@@ -1053,13 +425,9 @@ footer{
         <span>+91 8605871448</span>
       </div>
       <div class="top-bar-item">
-  <i class="fas fa-envelope"></i>
-  <span>
-    <a href="mailto:imran@silegalservices.com">
-      imran@silegalservices.com
-    </a>
-  </span>
-</div>
+        <i class="fas fa-envelope"></i>
+        <span><a href="mailto:imran@silegalservices.com">imran@silegalservices.com</a></span>
+      </div>
       <div class="top-bar-item">
         <i class="fas fa-clock"></i>
         <span>Mon - Sat: 9AM - 6PM</span>
@@ -1070,7 +438,7 @@ footer{
       </div>
     </div>
   </div>
-  
+
   <div class="nav-container">
     <div class="logo" onclick="window.location.href='index.html'">
       <div class="logo-icon">
@@ -1081,18 +449,14 @@ footer{
         <p>ADVOCATES & CONSULTANTS</p>
       </div>
     </div>
-    
     <div class="mobile-toggle" onclick="toggleMenu()">
       <i class="fas fa-bars"></i>
     </div>
-    
     <nav id="nav">
       <ul>
         <li onclick="window.location.href='index.html'">Home</li>
-<!--         <li onclick="window.location.href='index.html#practice-areas'">Practice Areas</li>
- -->        <li onclick="window.location.href='premium-about.html'">About Us</li>
-<!--         <li onclick="window.location.href='premium-testimonials.html'">Testimonials</li>
- -->        <li onclick="window.location.href='premium-contact.html'">Contact</li>
+        <li onclick="window.location.href='premium-about.html'">About Us</li>
+        <li onclick="window.location.href='premium-contact.html'">Contact</li>
         <li>
           <button class="cta-button" onclick="openWhatsApp()">
             <i class="fab fa-whatsapp"></i> Free Consultation
@@ -1128,24 +492,12 @@ footer{
       <p>We specialize in a wide range of legal services, including legal notice drafting and replies, Name/Surname correction, Name change process, consumer court cases, civil and criminal drafting, agreements, affidavits, legal applications, banking and finance legal matters, loan and recovery disputes, cyber crime assistance, Passport issues, bank account freeze or hold guidance, Birth/Death certificate matters, and legal consultation services. Each service is designed to meet legal compliance standards while protecting our clients' rights and interests.</p>
       <p>At SI Legal Services, we follow professional ethics, confidentiality, and transparency in every legal matter. We understand that legal issues can be complex and stressful; therefore, we focus on providing clear communication, practical legal solutions, and cost-effective services. Our drafting and advisory services are prepared with precision to support clients in courts, government authorities, and financial institutions.</p>
       <p>Our mission is to make legal services in India accessible, dependable, and affordable, while ensuring that clients receive expert legal support and trustworthy guidance. With a client-centric approach and strong legal knowledge, SI Legal Services aims to become a reliable partner for all your legal documentation and consultation needs.</p>
-      
+
       <div class="stats-grid">
-        <div class="stat-box">
-          <h3>200+</h3>
-          <p>Cases Won</p>
-        </div>
-        <div class="stat-box">
-          <h3>100%</h3>
-          <p>Success Rate</p>
-        </div>
-        <div class="stat-box">
-          <h3>5+</h3>
-          <p>Expert Lawyers</p>
-        </div>
-        <div class="stat-box">
-          <h3>24/7</h3>
-          <p>Support</p>
-        </div>
+        <div class="stat-box"><h3>200+</h3><p>Cases Won</p></div>
+        <div class="stat-box"><h3>100%</h3><p>Success Rate</p></div>
+        <div class="stat-box"><h3>5+</h3><p>Expert Lawyers</p></div>
+        <div class="stat-box"><h3>24/7</h3><p>Support</p></div>
       </div>
     </div>
   </div>
@@ -1155,19 +507,14 @@ footer{
 <section class="mission-vision">
   <div class="mv-container">
     <div class="mv-card">
-      <div class="mv-icon">
-        <i class="fas fa-bullseye"></i>
-      </div>
+      <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
       <h3>Our Mission</h3>
-      <p>To Provide expert legal services in criminal,civil, Matrimonial and cyber law with integrity,transparency and eddifiency. <br> We are commited to deliveringaccurate legal advice, strong documentation and timely support to helps clients navigate legal challenges with confidence.</p>
+      <p>To Provide expert legal services in criminal, civil, Matrimonial and cyber law with integrity, transparency and efficiency. We are committed to delivering accurate legal advice, strong documentation and timely support to help clients navigate legal challenges with confidence.</p>
     </div>
-    
     <div class="mv-card">
-      <div class="mv-icon">
-        <i class="fas fa-eye"></i>
-      </div>
+      <div class="mv-icon"><i class="fas fa-eye"></i></div>
       <h3>Our Vision</h3>
-      <p>To becomea trusted legal partner in india, recognized for preofessional ethies,confidently and client focused solution, While making legal service accessible,reliable and affordable all.</p>
+      <p>To become a trusted legal partner in India, recognized for professional ethics, confidentiality and client focused solutions, while making legal service accessible, reliable and affordable for all.</p>
     </div>
   </div>
 </section>
@@ -1178,139 +525,39 @@ footer{
     <h2>Our Core Values</h2>
     <p>The principles that guide everything we do</p>
   </div>
-  
   <div class="values-grid">
     <div class="value-card">
-      <div class="value-icon">
-        <i class="fas fa-balance-scale-right"></i>
-      </div>
+      <div class="value-icon"><i class="fas fa-balance-scale-right"></i></div>
       <h4>Integrity</h4>
       <p>We uphold the highest ethical standards in all our professional dealings, ensuring transparency and honesty with every client.</p>
     </div>
-    
     <div class="value-card">
-      <div class="value-icon">
-        <i class="fas fa-award"></i>
-      </div>
+      <div class="value-icon"><i class="fas fa-award"></i></div>
       <h4>Excellence</h4>
       <p>We pursue excellence in every case through meticulous preparation, innovative strategies, and unwavering dedication to achieving optimal results.</p>
     </div>
-    
     <div class="value-card">
-      <div class="value-icon">
-        <i class="fas fa-handshake"></i>
-      </div>
+      <div class="value-icon"><i class="fas fa-handshake"></i></div>
       <h4>Client-Centric</h4>
       <p>Our clients' interests come first. We build lasting relationships based on trust, communication, and personalized attention to each unique case.</p>
     </div>
-    
     <div class="value-card">
-      <div class="value-icon">
-        <i class="fas fa-shield-alt"></i>
-      </div>
+      <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
       <h4>Confidentiality</h4>
       <p>We maintain strict confidentiality and protect our clients' sensitive information with the utmost care and professional responsibility.</p>
     </div>
-    
     <div class="value-card">
-      <div class="value-icon">
-        <i class="fas fa-brain"></i>
-      </div>
+      <div class="value-icon"><i class="fas fa-brain"></i></div>
       <h4>Innovation</h4>
       <p>We embrace modern legal technologies and innovative approaches to deliver efficient, effective solutions to complex legal challenges.</p>
     </div>
-    
     <div class="value-card">
-      <div class="value-icon">
-        <i class="fas fa-heart"></i>
-      </div>
+      <div class="value-icon"><i class="fas fa-heart"></i></div>
       <h4>Compassion</h4>
       <p>We understand that legal matters often involve emotional stress. We approach every case with empathy and genuine care for our clients' well-being.</p>
     </div>
   </div>
 </section>
-
-<!-- TEAM SECTION -->
-<!-- <section class="team-section">
-  <div class="team-header">
-    <h2>Meet Our Expert Team</h2>
-    <p>Experienced advocates dedicated to your success</p>
-  </div>
-  
-  <div class="team-grid">
-    <div class="team-card">
-      <div class="team-image-container">
-        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400" alt="Adv. Rajesh Sharma" class="team-image">
-        <div class="team-overlay">
-          <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="team-info">
-        <h4>Adv. Rajesh Sharma</h4>
-        <div class="team-role">Senior Partner & Founder</div>
-        <p>15+ years of expertise in Criminal & Corporate Law. LLM from Pune University. Successfully handled 1000+ cases in High Courts across Maharashtra.</p>
-      </div>
-    </div>
-    
-    <div class="team-card">
-      <div class="team-image-container">
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400" alt="Adv. Priya Singh" class="team-image">
-        <div class="team-overlay">
-          <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="team-info">
-        <h4>Adv. Priya Singh</h4>
-        <div class="team-role">Partner - Family Law</div>
-        <p>12+ years specializing in Family & Matrimonial cases. Known for compassionate handling and achieving favorable settlements in complex divorce cases.</p>
-      </div>
-    </div>
-    
-    <div class="team-card">
-      <div class="team-image-container">
-        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400" alt="Adv. Amit Kumar" class="team-image">
-        <div class="team-overlay">
-          <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="team-info">
-        <h4>Adv. Amit Kumar</h4>
-        <div class="team-role">Cyber Crime Specialist</div>
-        <p>10+ years in Cyber Law & Digital Forensics. Certified Ethical Hacker (CEH). Expert in bank account freezing and online fraud cases.</p>
-      </div>
-    </div>
-    
-    <div class="team-card">
-      <div class="team-image-container">
-        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400" alt="Adv. Meera Patel" class="team-image">
-        <div class="team-overlay">
-          <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="team-info">
-        <h4>Adv. Meera Patel</h4>
-        <div class="team-role">Corporate Law Expert</div>
-        <p>8+ years in Corporate Mergers, Acquisitions & Company Law. Advised 100+ startups and established businesses on legal compliance.</p>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <!-- TIMELINE -->
 <section class="timeline-section">
@@ -1318,7 +565,6 @@ footer{
     <h2>Our Journey</h2>
     <p>From vision to trusted legal partner in India</p>
   </div>
-  
   <div class="timeline">
     <div class="timeline-item">
       <div class="timeline-year">2015</div>
@@ -1327,7 +573,6 @@ footer{
         <p>SI Legal Services was founded with a clear vision to provide reliable, accessible, and professional legal consultancy and drafting services in India. What began as a focused legal support initiative has grown into a trusted platform.</p>
       </div>
     </div>
-    
     <div class="timeline-item">
       <div class="timeline-year">2017</div>
       <div class="timeline-content">
@@ -1335,7 +580,6 @@ footer{
         <p>Expanded our services to include legal notice drafting, consumer court disputes, civil and criminal documentation, and banking and finance legal matters, ensuring compliance with Indian law at every step.</p>
       </div>
     </div>
-    
     <div class="timeline-item">
       <div class="timeline-year">2019</div>
       <div class="timeline-content">
@@ -1343,7 +587,6 @@ footer{
         <p>Built a reputation for delivering clear legal guidance and dependable documentation support through commitment to legal accuracy, ethical practice, and client satisfaction.</p>
       </div>
     </div>
-    
     <div class="timeline-item">
       <div class="timeline-year">2021</div>
       <div class="timeline-content">
@@ -1351,7 +594,6 @@ footer{
         <p>Adapted to evolving legal requirements and modern legal technologies to provide efficient and cost-effective solutions to clients across India.</p>
       </div>
     </div>
-    
     <div class="timeline-item">
       <div class="timeline-year">2023</div>
       <div class="timeline-content">
@@ -1359,7 +601,6 @@ footer{
         <p>Serving individuals, professionals, and businesses with diverse legal needs including cyber crime matters, account freeze guidance, passport issues, and name change processes.</p>
       </div>
     </div>
-    
     <div class="timeline-item">
       <div class="timeline-year">2026</div>
       <div class="timeline-content">
@@ -1374,7 +615,7 @@ footer{
 <section class="cta-section">
   <div class="cta-content">
     <h2>Ready to Get Expert Legal Help?</h2>
-    <p>Get professional legal Consultation in Criminal, Civil, Matrimonial & Cyber Law from Experienced ADVOCATES. </p>
+    <p>Get professional legal Consultation in Criminal, Civil, Matrimonial & Cyber Law from Experienced ADVOCATES.</p>
     <button class="btn btn-primary" onclick="window.location.href='premium-contact.html'">
       <i class="fas fa-envelope"></i> Contact Us Today
     </button>
@@ -1386,24 +627,21 @@ footer{
   <div class="footer-content">
     <div class="footer-section">
       <h3>SI Legal Services</h3>
-      <p>Trusted Si Legal services Providing Criminal,civil,matrimonial and cyber crime fraud,Trademark legal Services in india with integrity, professionalism and client focused solution since.</p>
+      <p>Trusted Si Legal services Providing Criminal, civil, matrimonial and cyber crime fraud, Trademark legal Services in india with integrity, professionalism and client focused solution since.</p>
       <div class="footer-social">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/silegalservices086/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/p/1Kb4KimK3r/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/silegalservices086/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
-    
     <div class="footer-section">
       <h3>Quick Links</h3>
       <ul>
         <li><a href="premium-about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-        <!-- <li><a href="index.html#practice-areas"><i class="fas fa-chevron-right"></i> Practice Areas</a></li> -->
         <li><a href="premium-contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
       </ul>
     </div>
-    
     <div class="footer-section">
       <h3>Legal Services</h3>
       <ul>
@@ -1415,115 +653,72 @@ footer{
         <li><a href="#"><i class="fas fa-chevron-right"></i> Trademark & Patent</a></li>
       </ul>
     </div>
-    
     <div class="footer-section">
       <h3>Contact Info</h3>
       <ul>
         <li><a href="tel:+918605871448"><i class="fas fa-phone"></i> +91 8605871448</a></li>
-<li>
-  <a href="mailto:imran@silegalservices.com">
-    <i class="fas fa-envelope"></i>
-    imran@silegalservices.com
-  </a>
-</li>
+        <li><a href="mailto:imran@silegalservices.com"><i class="fas fa-envelope"></i> imran@silegalservices.com</a></li>
         <li><a href="#"><i class="fas fa-map-marker-alt"></i> Nanded, Maharashtra</a></li>
         <li><a href="#"><i class="fas fa-clock"></i> Mon-Sat: 9AM-6PM</a></li>
       </ul>
     </div>
   </div>
-  
   <div class="footer-bottom">
-    <p>&copy; 2026 
-      <a href="http://kssoftware.infinityfree.me/" 
-         target="_blank" 
-         style="color: inherit; text-decoration: none;">
-         KS_SOFTWARE
-      </a>
+    <p>&copy; 2026
+      <a href="http://kssoftware.infinityfree.me/" target="_blank" style="color: inherit; text-decoration: none;">KS_SOFTWARE</a>
       . All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
     </p>
     <p style="margin-top: 10px; font-size: 14px;">
-      <i class="fas fa-calendar-alt" style="color: var(--primary-gold); margin-right: 8px;"></i>
-      <span id="footerDateTime" style="color: var(--light-gold);"></span>
+      <i class="fas fa-calendar-alt" style="color: #F5F5F5; margin-right: 8px;"></i>
+      <span id="footerDateTime" style="color: #C8D8F8;"></span>
     </p>
     <div style="margin-top:15px;padding:10px 20px;background:rgba(0,0,139,0.1);border-radius:30px;display:inline-block;border:1px solid rgba(0,0,139,0.3)">
-      <i class="fas fa-eye" style="color:var(--primary-gold);margin-right:8px"></i>
-      <span style="color:var(--light-gold);font-family:'Inter',sans-serif;font-size:13px">Total Visitors: </span>
-      <span id="visitorCount" style="color:var(--primary-gold);font-family:monospace;font-size:15px;font-weight:700">000000</span>
+      <i class="fas fa-eye" style="color:#F5F5F5;margin-right:8px"></i>
+      <span style="color:#C8D8F8;font-family:'Inter',sans-serif;font-size:13px">Total Visitors: </span>
+      <span id="visitorCount" style="color:#F5F5F5;font-family:monospace;font-size:15px;font-weight:700">000000</span>
     </div>
   </div>
 </footer>
 
-<!-- WHATSAPP -->
-<div class="whatsapp-float" onclick="openWhatsApp()">
+<!-- WHATSAPP FLOAT -->
+<div class="whatsapp-float" onclick="openWhatsApp()" aria-label="Chat on WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
+window.addEventListener('scroll', () => {
+  const header = document.getElementById('header');
+  if (window.scrollY > 50) { header.classList.add('scrolled'); }
+  else { header.classList.remove('scrolled'); }
+});
+
 function toggleMenu() {
-  const nav = document.getElementById('nav');
-  nav.classList.toggle('active');
+  document.getElementById('nav').classList.toggle('active');
 }
 
-// WHATSAPP - FIXED WITH CORRECT NUMBER
 function openWhatsApp() {
   window.open('https://wa.me/918605871448?text=Hello,%20I%20need%20legal%20assistance.%20Please%20help.', '_blank');
 }
 
-// DATE & TIME UPDATE FOR HEADER AND FOOTER
 function updateDateTime() {
   const now = new Date();
-  const options = {
-    weekday: 'short',
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: true
-  };
+  const options = { weekday:'short', day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit', hour12:true };
   const formattedDate = now.toLocaleString('en-IN', options);
-  
-  // Update header datetime
-  const headerDateTime = document.getElementById('currentDateTime');
-  if (headerDateTime) {
-    headerDateTime.textContent = formattedDate;
-  }
-  
-  // Update footer datetime
-  const footerDateTime = document.getElementById('footerDateTime');
-  if (footerDateTime) {
-    footerDateTime.textContent = formattedDate;
-  }
+  const h = document.getElementById('currentDateTime');
+  if (h) h.textContent = formattedDate;
+  const f = document.getElementById('footerDateTime');
+  if (f) f.textContent = formattedDate;
 }
-
-// Update every second
 setInterval(updateDateTime, 1000);
 updateDateTime();
 
-// VISITOR COUNTER - FIXED TO WORK PROPERLY
 function updateVisitorCount() {
-  // Get the current count from localStorage
-  let visitorCount = localStorage.getItem('silegal_visitor_count');
-  
-  // If it doesn't exist, initialize it
-  if (!visitorCount) {
-    visitorCount = 1;
-  } else {
-    // Increment the count
-    visitorCount = parseInt(visitorCount) + 1;
-  }
-  
-  // Save the new count
-  localStorage.setItem('silegal_visitor_count', visitorCount);
-  
-  // Display the count
-  const visitorElement = document.getElementById('visitorCount');
-  if (visitorElement) {
-    visitorElement.textContent = visitorCount.toString().padStart(6, '0');
-  }
+  let count = localStorage.getItem('silegal_visitor_count');
+  count = count ? parseInt(count) + 1 : 1;
+  localStorage.setItem('silegal_visitor_count', count);
+  const el = document.getElementById('visitorCount');
+  if (el) el.textContent = count.toString().padStart(6, '0');
 }
-
-// Initialize visitor counter on page load
 updateVisitorCount();
 </script>
 </body>
